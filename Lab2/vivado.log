@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jan 16 01:39:21 2024
+# Process ID: 33696
+# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6108 C:\Users\qinyu\Desktop\CSE 100\CSE-100\Lab2\Lab2.xpr
+# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/vivado.log
+# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/qinyu/Desktop/CSE 100/Lab2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 16 01:40:11 2024...
