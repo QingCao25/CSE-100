@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 17 04:24:25 2024
+# Process ID: 35488
+# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.runs/synth_1
+# Command line: vivado.exe -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.runs/synth_1/Main.vds
+# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace

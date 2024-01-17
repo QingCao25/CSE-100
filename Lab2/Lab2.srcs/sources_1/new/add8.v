@@ -25,19 +25,18 @@ module add8(
   input [7:0] B,
   input Cin,
   output [7:0] S,
-  output ovfl,
   output Cout
     );
     
-    wire [7:0] carry;
-    FA fa0 (.A(A[0]), .B(B[0]), .Cin(Cin), .S(S[0]), .Cout(carry[0]), .ovfl(ovfl));
-    FA fa1 (.A(A[1]), .B(B[1]), .Cin(carry[0]), .S(S[1]), .Cout(carry[1]), .ovfl(ovfl));
-    FA fa2 (.A(A[2]), .B(B[2]), .Cin(carry[1]), .S(S[2]), .Cout(carry[2]), .ovfl(ovfl));
-    FA fa3 (.A(A[3]), .B(B[3]), .Cin(carry[2]), .S(S[3]), .Cout(carry[3]), .ovfl(ovfl));
-    FA fa4 (.A(A[4]), .B(B[4]), .Cin(carry[3]), .S(S[4]), .Cout(carry[4]), .ovfl(ovfl));
-    FA fa5 (.A(A[5]), .B(B[5]), .Cin(carry[4]), .S(S[5]), .Cout(carry[5]), .ovfl(ovfl));
-    FA fa6 (.A(A[6]), .B(B[6]), .Cin(carry[5]), .S(S[6]), .Cout(carry[6]), .ovfl(ovfl));
-    FA fa7 (.A(A[7]), .B(B[7]), .Cin(carry[6]), .S(S[7]), .Cout(Cout), .ovfl(ovfl));
+    wire [6:0] carry;
+    FA fa0 (.a(A[0]), .b(B[0]), .Cin(Cin), .s(S[0]), .Cout(carry[0]));
+    FA fa1 (.a(A[1]), .b(B[1]), .Cin(carry[0]), .s(S[1]), .Cout(carry[1]));
+    FA fa2 (.a(A[2]), .b(B[2]), .Cin(carry[1]), .s(S[2]), .Cout(carry[2]));
+    FA fa3 (.a(A[3]), .b(B[3]), .Cin(carry[2]), .s(S[3]), .Cout(carry[3]));
+    FA fa4 (.a(A[4]), .b(B[4]), .Cin(carry[3]), .s(S[4]), .Cout(carry[4]));
+    FA fa5 (.a(A[5]), .b(B[5]), .Cin(carry[4]), .s(S[5]), .Cout(carry[5]));
+    FA fa6 (.a(A[6]), .b(B[6]), .Cin(carry[5]), .s(S[6]), .Cout(carry[6]));
+    FA fa7 (.a(A[7]), .b(B[7]), .Cin(carry[6]), .s(S[7]), .Cout(Cout));
 
 
 endmodule

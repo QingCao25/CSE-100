@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/AddSub8.v,1705488164,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/FA.v,,AddSub8,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/FA.v,1705397986,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/Main.v,,FA,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/Main.v,1705489935,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/Mux.v,,Main,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/Mux.v,1705481588,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/add8.v,,Mux,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/add8.v,1705488486,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/hex7seg.v,,add8,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/hex7seg.v,1705481588,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/lab2_digsel.v,,hex7seg,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/lab2_digsel.v,1705483163,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/test_addsub.v,,CB4CE_MXILINX_clkcntrl4;FTCE_MXILINX_clkcntrl4;clk_wiz_0;clkcntrl4;lab2_digsel,,,,,,,,
+C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.srcs/sources_1/new/test_addsub.v,1705485356,verilog,,,,test_add,,,,,,,,

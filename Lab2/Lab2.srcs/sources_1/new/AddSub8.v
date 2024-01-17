@@ -26,9 +26,8 @@ module AddSub8(
   input sub,
   output [7:0] S,
   output ovfl
-  
   );  
+  add8 ADD (.A(A), .B({8{sub}}^B), .Cin(sub), .S(S));
   
-    assign S  = (~sub & (A + B)) | (sub&(A - B));
-    assign ovfl = (S[7] & A[7] & B[7]) | (~S[7] & ~A[7] & ~B[7]);
+  assign ovfl = (~A[7] & ~B[7] & ~sub & S[7])|(A[7] & B[7] & ~sub & ~S[7])|(~A[7] & B[7] & sub & S[7])|(A[7] & ~B[7] & sub & ~S[7]);
 endmodule

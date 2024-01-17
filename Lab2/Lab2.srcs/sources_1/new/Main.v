@@ -27,34 +27,30 @@ module Main(
     input clkin,
     output [6:0] seg,
     output [3:0] an,
-    output [15:0] led
+    output [15:0] led,
+    output dp
     );
     
-    assign an[3] = 1;
-    assign an[2] = 1;
-    assign an[1] = 0;
-    assign an[0] = 0;
+    wire [7:0] AddSub8_Output;
+    wire overflow;  
+    AddSub8 hello (.A(sw[15:8]), .B(sw[7:0]), .sub(btnU), .S(AddSub8_Output), .ovfl(overflow));
+
+    wire [6:0] left_seg, right_seg; 
+    hex7seg left (.n(AddSub8_Output[7:4]), .seg(left_seg[6:0]));
+    hex7seg right (.n(AddSub8_Output[3:0]), .seg(right_seg[6:0]));
     
-    assign sw[15] = led[15];
-    assign sw[14] = led[14];
-    assign sw[13] = led[13];
-    assign sw[12] = led[12];
-    assign sw[11] = led[11];
-    assign sw[10] = led[10];
-    assign sw[9] = led[9];
-    assign sw[8] = led[8];
-    assign sw[7] = led[7];
-    assign sw[6] = led[6];
-    assign sw[5] = led[5];
-    assign sw[4] = led[4];
-    assign sw[3] = led[3];
-    assign sw[2] = led[2];
-    assign sw[1] = led[1];
-    assign sw[0] = led[0];
-
-    hex7seg butt = AddSub8[3:0];
-    hex7seg cheeks = AddSub8[7:4];
-
+    wire dig_sel; 
+    Mux step6 (.x1(left_seg), .x2(right_seg), .sel(dig_sel), .y(seg));
+    
+    lab2_digsel digsel (.clkin(clkin), .greset(btnR), .digsel(dig_sel));
+    assign an[3] = 1'b1;
+    assign an[2] = 1'b1;
+    assign an[1] = dig_sel;
+    assign an[0] = ~dig_sel;
+    assign dp = ~overflow; 
+    
+    
+    assign led = sw;
 
     
 endmodule
