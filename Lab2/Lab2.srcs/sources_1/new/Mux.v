@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 01/16/2024 01:28:52 AM
+// Create Date: 01/16/2024 04:39:36 PM
 // Design Name: 
-// Module Name: AddSub8
+// Module Name: Mux
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,15 +20,12 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module AddSub8(
-  input [7:0] A,
-  input [7:0] B,
-  input sub,
-  output [7:0] S,
-  output ovfl
-  
-  );  
-  
-    assign S  = (~sub & (A + B)) | (sub&(A - B));
-    assign ovfl = (S[7] & A[7] & B[7]) | (~S[7] & ~A[7] & ~B[7]);
+module Mux(
+    input [7:0] x1,
+    input [7:0] x2, 
+    input sel,
+    output [7:0] y
+    );
+    
+    assign y = (sel & x1) | (~sel & x2);
 endmodule
