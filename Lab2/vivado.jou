@@ -2,30 +2,32 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Jan 17 14:38:54 2024
-# Process ID: 11348
-# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11804 C:\Users\qinyu\OneDrive\Desktop\CSE100\CSE-100\Lab2\Lab2.xpr
-# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/vivado.log
-# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2\vivado.jou
+# Start of session at: Wed Jan 17 21:12:56 2024
+# Process ID: 1296
+# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7604 C:\Users\qinyu\Desktop\CSE 100\CSE-100\Lab2\Lab2.xpr
+# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/vivado.log
+# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2\vivado.jou
 #-----------------------------------------------------------
-start_guopopen_project C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/Lab2.xpupdate_compile_order -fileset sources_1
-1
-open_run impl_1
-create_run synth_2 -flow {Vivado Synthesis 2019} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
-current_run [get_runs synth_2]
-set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-launch_runs impl_2 -to_step write_bitstream -jobs 8
-wait_on_run impl_2
-open_hw
-connect_hw_server
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/Lab2.runs/impl_2/Main.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/Lab2.runs/impl_2/Main.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw
+start_gui
+open_project {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab2/Lab2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source test_add.tcl
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {Untitled 1}
+add_wave {{/test_add/UUT/AddSub8_Output}} 
+relaunch_sim
+run 10 us
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+relaunch_sim
+run 10 us
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim

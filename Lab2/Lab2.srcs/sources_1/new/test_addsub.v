@@ -71,24 +71,45 @@ module test_add( ); // no inputs/outputs, this is a wrapper
          // example:   foo = 1'b0;
 	 // always advance time by multiples of 100ns
 	 //start by setting initial values
-         sw = 8'h0507;
-         sw1 = 8'h0508;
+     sw = 16'h0507;
 	 btnR=1'b0;
 	 btnU=1'b0;
          // and advance time by 2000 to begin
 	 #2000;
          // Then new values can be provided and time advance by 100
+     sw = 16'h0102;
+
 	 #100;
-	 btnU=1'b0;
-	 #100;
-	 btnU=1'b1;
-	 sw = 16'h0280;
-	 #100;
-	 btnU=1'b0;
-         #100;
+	
 
 // you will need to add more tests ....
-          
+    btnU=1'b0;
+    sw[15:8] = 8'b00101110;
+    sw[7:0] = 8'b0000100;
+    #100;
+    btnU = 1'b1;
+    #100;
+    btnU=1'b0;
+    sw[15:8] = 8'b11010010;
+    sw[7:0] = 8'b11111100;
+    #100;
+    btnU=1'b1;
+    #100;
+    btnU=1'b0;
+    sw[15:8] = 8'b00101110;
+    sw[7:0] = 8'b01011010;
+    
+    
+//    Overflow Cases
+//    (Addition - two pos numbers resulting in neg) 01111110 + 00000011 = 10000001
+//    (Addition - two neg numbers resulling in pos) 10000010 + 11111101 = 01111111
+//    (Subtraction - subtract neg from pos resulting in a neg) 01111110 - 10000001 = 11111111
+//    (Subtraction - subtract pos from neg resulting in a pos) 10000010 - 11111101 = 10000001
+    
+    
+      
+      
+      
     end
 
 endmodule
