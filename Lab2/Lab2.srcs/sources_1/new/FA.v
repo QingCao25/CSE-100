@@ -28,6 +28,8 @@ module FA(
     output Cout
     );
     
-    assign s = ((a^b)^(Cin));
-    assign Cout = (((a^b) & (Cin)) | (a & b));
+    assign s = a ^ b ^ Cin;
+    assign Cout = (a & b) | (b & Cin) | (a & Cin);
+    
+
 endmodule

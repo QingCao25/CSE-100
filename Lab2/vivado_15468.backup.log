@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Jan 17 04:38:40 2024
+# Process ID: 15468
+# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10936 C:\Users\qinyu\OneDrive\Desktop\CSE100\CSE-100\Lab2\Lab2.xpr
+# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/vivado.log
+# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/Lab2.xpr
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 17 04:39:36 2024...
+P repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:22 . Memory (MB): peak = 704.293 ; gain = 125.543
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Wed Jan 17 04:39:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/Lab2.runs/synth_1/runme.log
+[Wed Jan 17 04:39:51 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab2/Lab2.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 17 04:43:28 2024...

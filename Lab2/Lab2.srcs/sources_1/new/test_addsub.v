@@ -15,7 +15,7 @@
 // 
 // Revision:
 // Revision 0.01 - File Created
-// Additional Comments:
+// additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -46,7 +46,7 @@ module test_add( ); // no inputs/outputs, this is a wrapper
     );
     
     
-// create an oscillating signal to impersonate the clock provided on the BASYS 3 board
+// create an oscillating signal to impersonate the clock provided on the BaSYS 3 board
     parameter PERIOD = 10;
     parameter real DUTY_CYCLE = 0.5;
     parameter OFFSET = 2;
@@ -71,7 +71,8 @@ module test_add( ); // no inputs/outputs, this is a wrapper
          // example:   foo = 1'b0;
 	 // always advance time by multiples of 100ns
 	 //start by setting initial values
-         sw = 16'h0507;
+         sw = 8'h0507;
+         sw1 = 8'h0508;
 	 btnR=1'b0;
 	 btnU=1'b0;
          // and advance time by 2000 to begin

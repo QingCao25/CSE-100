@@ -27,5 +27,5 @@ module Mux(
     output [7:0] y
     );
     
-    assign y = (sel & x1) | (~sel & x2);
+    assign y = sel ? x1 : x2;
 endmodule

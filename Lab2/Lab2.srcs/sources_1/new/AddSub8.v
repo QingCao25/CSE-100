@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 01/16/2024 01:28:52 AM
+// Create Date: 01/16/2024 01:28:52 aM
 // Design Name: 
-// Module Name: AddSub8
+// Module Name: addSub8
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -15,7 +15,7 @@
 // 
 // Revision:
 // Revision 0.01 - File Created
-// Additional Comments:
+// additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -27,7 +27,8 @@ module AddSub8(
   output [7:0] S,
   output ovfl
   );  
-  add8 ADD (.A(A), .B({8{sub}}^B), .Cin(sub), .S(S));
   
+  add8 ADD (.A(A), .B({8{sub}}^B), .Cin(sub), .S(S));
   assign ovfl = (~A[7] & ~B[7] & ~sub & S[7])|(A[7] & B[7] & ~sub & ~S[7])|(~A[7] & B[7] & sub & S[7])|(A[7] & ~B[7] & sub & ~S[7]);
+  
 endmodule
