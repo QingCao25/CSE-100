@@ -98,7 +98,10 @@ module test_add( ); // no inputs/outputs, this is a wrapper
     btnU=1'b0;
     sw[15:8] = 8'b00101110;
     sw[7:0] = 8'b01011010;
-    
+    #100;
+    sw[15:8] = 8'b10000010;
+    sw[7:0] = 8'b11111101;
+    #100;
     
 //    Overflow Cases
 //    (Addition - two pos numbers resulting in neg) 01111110 + 00000011 = 10000001

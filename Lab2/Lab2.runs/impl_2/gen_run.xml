@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_2" LaunchPart="xc7a35tcpg236-1" LaunchTime="1705552391">
-  <File Type="BITSTR-BMM" Name="Main_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="Main_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Main.tcl"/>
-  <File Type="OPT-DCP" Name="Main_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="Main_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="Main_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Main_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Main_opt.dcp"/>
   <File Type="OPT-DRC" Name="Main_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Main.hwdef"/>
   <File Type="PWROPT-DCP" Name="Main_pwropt.dcp"/>
@@ -25,21 +25,21 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="Main_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Main_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Main_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="Main.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="Main_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Main.mmi"/>
+  <File Type="BITSTR-LTX" Name="Main.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Main_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Main.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Main_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="Main.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Main_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Main.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="Main_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Main_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Main_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Main_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Main_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Main_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="Main.vdi"/>
   <File Type="ROUTE-CLK" Name="Main_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="Main.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="Main_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Main_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Main_bus_skew_routed.rpx"/>
