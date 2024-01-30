@@ -3,12 +3,13 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 01/22/2024 06:02:31 PM
+// Create Date: 01/28/2024 11:24:30 PM
 // Design Name: 
-// Module Name: hex7seg
+// Module Name: Edge
 // Project Name: 
 // Target Devices: 
-// Tool Versions: escription: 
+// Tool Versions: 
+// Description: 
 // 
 // Dependencies: 
 // 
@@ -19,7 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module hex7seg(
-    input an[3:0]
+module Edge(
+    input clk,
+    input in,
+    output out
     );
+    
+    wire [1:0] Q;
+    FDRE #(.INIT(1'b0)) ff_01 (.C(clk), .CE(1'b1), .D(in), .Q(Q[0]));
+    FDRE #(.INIT(1'b0)) ff_02 (.C(clk), .CE(1'b1), .D(Q[0]), .Q(Q[1]));
+    assign out = Q[0] & ~Q[1];
 endmodule
+
