@@ -50,9 +50,7 @@ module countUD5L(
 //    assign B[2] = (~LD & (Q[2] ^ ((UD & ~CE & Q[1] & Q[0]) | (~UD & CE & ~Q[1] & ~Q[0]))) | (LD & Din[2]));
 //    assign B[1] = (~LD & (Q[1] ^ ((UD & ~Q[0] & ~CE) | (~UD & CE & Q[0]))) | (LD & Din[1]));
 //    assign B[0] = (~LD & ((~Q[0] & UD & ~CE) | (Q[0] & ~UD & CE)) | (LD & Din[0]));
-    
-//    assign B[0] = UD ^ B[0];  
-    
+        
     assign UTC = Q[4] & Q[3] & Q[2] & Q[1] & Q[0];
     assign DTC = ~Q[4] & ~Q[3] & ~Q[2] & ~Q[1] & ~Q[0];
 endmodule

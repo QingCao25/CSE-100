@@ -23,12 +23,13 @@
 module Edge(
     input clk,
     input in,
+    input btnU,
     output out
     );
     
     wire [1:0] Q;
-    FDRE #(.INIT(1'b0)) ff_01 (.C(clk), .CE(1'b1), .D(in), .Q(Q[0]));
-    FDRE #(.INIT(1'b0)) ff_02 (.C(clk), .CE(1'b1), .D(Q[0]), .Q(Q[1]));
+    FDRE #(.INIT(1'b0)) ff_01 (.C(clk), .CE(btnU), .D(in), .Q(Q[0]));
+    FDRE #(.INIT(1'b0)) ff_02 (.C(clk), .CE(btnU), .D(Q[0]), .Q(Q[1]));
     assign out = Q[0] & ~Q[1];
 endmodule
 

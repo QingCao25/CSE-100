@@ -19,7 +19,6 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 3
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,6 +32,7 @@ set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
 set_property ip_output_repo {c:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
+  {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.srcs/sources_1/new/Edge.v}
   {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.srcs/sources_1/new/RingCounter.v}
   {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.srcs/sources_1/new/countUD15L.v}
   {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.srcs/sources_1/new/countUD5L.v}

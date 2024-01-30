@@ -76,8 +76,9 @@ module counter5bit_test();
      #100;
      UD = 1'b1;
 //     CE = 1'b1;
-     #600;
-     UD = 1'b0;
+     #100;
+//     UD = 1'b0;
+     CE = 1'b1;
     end
     
 endmodule

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Jan 30 02:37:23 2024
+| Date         : Tue Jan 30 13:10:08 2024
 | Host         : QPC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Module_control_sets_placed.rpt
 | Design       : Top_Module
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |     6 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    25 |
+| Unused register locations in slices containing registers |    26 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -58,7 +58,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              26 |           14 |
+| No           | No                    | No                     |              25 |           13 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |              13 |            6 |
@@ -78,7 +78,7 @@ Table of Contents
 |  slowit/my_clk_inst/clk_out1 | slowit/slowclk/XLXI_37/I_36_31_n_0 |                  |                2 |              4 |
 |  slowit/my_clk_inst/clk_out1 | slowit/slowclk/XLXI_38/CEO         |                  |                2 |              4 |
 |  slowit/slowclk/clk_out      | slowit/slowclk/XLXI_40/TC          |                  |                1 |              4 |
-|  slowit/slowclk/clk_out      |                                    |                  |               12 |             22 |
+|  slowit/slowclk/clk_out      |                                    |                  |               11 |             21 |
 +------------------------------+------------------------------------+------------------+------------------+----------------+
 
 

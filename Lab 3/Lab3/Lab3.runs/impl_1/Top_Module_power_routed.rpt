@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Tue Jan 30 02:37:37 2024
+| Date             : Tue Jan 30 13:10:22 2024
 | Host             : QPC running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Module_power_routed.rpt -pb Top_Module_power_summary_routed.pb -rpx Top_Module_power_routed.rpx
 | Design           : Top_Module
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.199        |
+| Total On-Chip Power (W)  | 0.200        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.127        |
+| Dynamic (W)              | 0.128        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        5 |       --- |             --- |
-| Slice Logic    |    <0.001 |      190 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       94 |     20800 |            0.45 |
-|   Register     |    <0.001 |       39 |     41600 |            0.09 |
+| Slice Logic    |    <0.001 |      182 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       87 |     20800 |            0.42 |
+|   Register     |    <0.001 |       38 |     41600 |            0.09 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
 |   Others       |     0.000 |       40 |       --- |             --- |
-| Signals        |    <0.001 |      137 |       --- |             --- |
+| Signals        |    <0.001 |      128 |       --- |             --- |
 | MMCM           |     0.116 |        1 |         5 |           20.00 |
-| I/O            |     0.010 |       48 |       106 |           45.28 |
+| I/O            |     0.011 |       47 |       106 |           44.34 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.199 |          |           |                 |
+| Total          |     0.200 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -143,7 +143,7 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| Top_Module      |     0.127 |
+| Top_Module      |     0.128 |
 |   slowit        |     0.117 |
 |     my_clk_inst |     0.116 |
 +-----------------+-----------+

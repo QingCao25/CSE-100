@@ -24,14 +24,14 @@ module counter15bit_test();
 
 // registers to hold values for the inputs to your top level
     reg [14:0] Din;
-    reg clkin, UD, CE, LD;
+    reg clk, UD, CE, LD;
 // wires to see the values of the outputs of your top level
     wire [14:0] Q;
     wire UTC, DTC;
 // create one instance of your top level
 // and attach it to the registers and wires created above
     countUD15L UUT (
-     .clkin(clkin),
+     .clk(clk),
      .Din(Din),
      .UD(UD),
      .LD(LD),
@@ -50,10 +50,10 @@ module counter15bit_test();
     initial    // Clock process for clkin
     begin
         #OFFSET
-		  clkin = 1'b1;
+		  clk = 1'b1;
         forever
         begin
-            #(PERIOD-(PERIOD*DUTY_CYCLE)) clkin = ~clkin;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) clk = ~clk;
         end
     end
 	
@@ -72,8 +72,9 @@ module counter15bit_test();
      CE = 1'b0;
      LD = 1'b0;
      // you will need to add more tests ....
-     #100;
+     #300;
      UD = 1'b1;
+     CE = 1'b1;
     end
 
 endmodule
