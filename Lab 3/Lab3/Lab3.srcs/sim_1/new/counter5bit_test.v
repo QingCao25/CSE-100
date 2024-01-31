@@ -74,7 +74,7 @@ module counter5bit_test();
      LD = 1'b0;
      // you will need to add more tests ....
      #100;
-     UD = 1'b1;
+     UD = 1'b0;
 //     CE = 1'b1;
      #100;
 //     UD = 1'b0;
