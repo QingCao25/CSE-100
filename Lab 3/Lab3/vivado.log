@@ -57,3 +57,58 @@ INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal pat
 Current project path is 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/.Xil/Vivado-21840-QPC/PrjAr/_X_'.
 INFO: [Coretcl 2-1213] Including run results for 'synth_1'
 INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Tue Jan 30 22:52:18 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/synth_1/runme.log
+[Tue Jan 30 22:52:18 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Tue Jan 30 22:57:26 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Tue Jan 30 22:58:57 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/synth_1/runme.log
+[Tue Jan 30 22:58:57 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 3/Lab3/Lab3.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb  1 00:40:54 2024...
