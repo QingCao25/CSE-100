@@ -26,6 +26,7 @@ module countUD5L(
     input CE, 
     input LD,
     input [4:0] Din,
+    input btnR,
     
     output [4:0] Q,
     output UTC,
@@ -34,11 +35,11 @@ module countUD5L(
     
     wire [4:0] B;
 
-    FDRE #(.INIT(1'b0) ) ff_01 (.C(clk), .CE(CE | LD), .D(B[4]), .Q(Q[4]));
-    FDRE #(.INIT(1'b0) ) ff_02 (.C(clk), .CE(CE | LD), .D(B[3]), .Q(Q[3]));
-    FDRE #(.INIT(1'b0) ) ff_03 (.C(clk), .CE(CE | LD), .D(B[2]), .Q(Q[2]));
-    FDRE #(.INIT(1'b0) ) ff_04 (.C(clk), .CE(CE | LD), .D(B[1]), .Q(Q[1]));
-    FDRE #(.INIT(1'b0) ) ff_05 (.C(clk), .CE(CE | LD), .D(B[0]), .Q(Q[0]));
+    FDRE #(.INIT(1'b0) ) ff_01 (.C(clk), .R(btnR), .CE(CE | LD), .D(B[4]), .Q(Q[4]));
+    FDRE #(.INIT(1'b0) ) ff_02 (.C(clk), .R(btnR), .CE(CE | LD), .D(B[3]), .Q(Q[3]));
+    FDRE #(.INIT(1'b0) ) ff_03 (.C(clk), .R(btnR), .CE(CE | LD), .D(B[2]), .Q(Q[2]));
+    FDRE #(.INIT(1'b0) ) ff_04 (.C(clk), .R(btnR), .CE(CE | LD), .D(B[1]), .Q(Q[1]));
+    FDRE #(.INIT(1'b0) ) ff_05 (.C(clk), .R(btnR), .CE(CE | LD), .D(B[0]), .Q(Q[0]));
   
 //    Incrementing jumps at 7 - Decrementing Works
     assign B[0] = (LD & Din[0]) | (~LD & UD & (CE ^ Q[0])) | (~LD & ~UD & (CE ^ Q[0]));

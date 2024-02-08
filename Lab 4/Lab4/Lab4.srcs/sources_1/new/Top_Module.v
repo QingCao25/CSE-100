@@ -33,7 +33,14 @@ module Top_Module(
     wire [3:0] anOut, H, sel;
     wire [15:0] GameCounterOut;
     
+    State_Machine oogabooga(.clk(clk),.go(btnC),.stop(btnU),.foursecs(),.twosecs(),.match(),.lastled(led[15]), 
+                            .shownum(),.resettimer(),.rungame(),.scored(),.won(),.flashboth(),.flashalt());
     
+    countUD5L Game_Counter(.clk(clk), .CE(), .R(btnR), .Q());
+    countUD5L Time_Counter(.clk(clk), .CE(), .R(btnR), .Q());
+    
+    LED_Shifter shift(.clk(clk), .In(sw),.LD(btnL), .Shift(), .Off());
+    LFSR LF_Shift (.clk(clk), .rnd()); 
     
     qsec_clks slowit (.clkin(clkin), .greset(btnR), .clk(clk), .digsel(digsel), .qsec(qsec));
     RingCounter count1(.clk(clk), .Advance(digsel), .Q(anOut));
