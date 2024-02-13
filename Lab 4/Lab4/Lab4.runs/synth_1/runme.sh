@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1'
+HD_PWD='C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log LFSR.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LFSR.tcl
+EAStep vivado -log Top_Module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl

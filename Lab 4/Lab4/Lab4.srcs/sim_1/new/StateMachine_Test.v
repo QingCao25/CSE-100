@@ -56,10 +56,12 @@ module StateMachine_Test();
         end
     end
     
-    
-    
-    
-    
+    initial 
+    begin
+    go = 1;
+    stop = 0;
+    #2000;    
+    end
     
     
 endmodule

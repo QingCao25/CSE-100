@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Feb  5 02:22:01 2024
-# Process ID: 11672
-# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1
-# Command line: vivado.exe -log LFSR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LFSR.tcl
-# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/LFSR.vds
-# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1\vivado.jou
+# Start of session at: Mon Feb 12 05:27:30 2024
+# Process ID: 18052
+# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1
+# Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/Top_Module.vds
+# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source LFSR.tcl -notrace
+source Top_Module.tcl -notrace

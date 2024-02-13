@@ -2,7 +2,8 @@
 2019.1
 May 24 2019
 15:06:07
-C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,LFSR_Test,,,,,,,,
-C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LFSR.v,1707129317,verilog,,C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/LFSR_Test.v,,LFSR,,,,,,,,
+C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1707173147,verilog,,,,glbl,,,,,,,,
+C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/LFSR_Test.v,1707173147,verilog,,,,LFSR_Test,,,,,,,,
+C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v,1707415878,verilog,,,,StateMachine_Test,,,,,,,,
+C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LFSR.v,1707173147,verilog,,C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/LFSR_Test.v,,LFSR,,,,,,,,
+C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v,1707415078,verilog,,C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v,,State_Machine,,,,,,,,
