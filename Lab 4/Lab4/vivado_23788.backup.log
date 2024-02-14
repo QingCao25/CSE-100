@@ -1,0 +1,596 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 12 17:08:55 2024
+# Process ID: 23788
+# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent27620 C:\Users\qinyu\Desktop\CSE 100\CSE-100\Lab 4\Lab4\Lab4.xpr
+# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/vivado.log
+# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon Feb 12 17:09:31 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/runme.log
+[Mon Feb 12 17:09:31 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon Feb 12 17:17:27 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/runme.log
+[Mon Feb 12 17:17:27 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/qinyu/Desktop/CSE -notrace
+couldn't read file "C:/Users/qinyu/Desktop/CSE": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Mon Feb 12 17:40:30 2024...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "StateMachine_Test_behav -key {Behavioral:sim_1:Functional:StateMachine_Test} -tclbatch {StateMachine_Test.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source StateMachine_Test.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'StateMachine_Test_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2059.246 ; gain = 22.336
+run 5000 ns
+run 5000 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2067.613 ; gain = 0.000
+run 4 s
+run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2067.613 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2075.410 ; gain = 0.000
+run 4 s
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2075.410 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2075.645 ; gain = 0.000
+run 4 ns
+run 4 us
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/StateMachine_Test/UUT/next_idle}} {{/StateMachine_Test/UUT/next_roundstart}} {{/StateMachine_Test/UUT/next_decrement}} {{/StateMachine_Test/UUT/next_roundwin}} {{/StateMachine_Test/UUT/next_roundlose}} {{/StateMachine_Test/UUT/next_gamewin}} 
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2076.805 ; gain = 0.000
+run 4 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2077.262 ; gain = 0.000
+run 4 us
+run 4 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2160.301 ; gain = 0.000
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2160.301 ; gain = 0.000
+run 4 us
+run 4 us
+run 4 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2160.301 ; gain = 0.000
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2160.301 ; gain = 0.000
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+run 4 us
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module State_Machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sim_1/new/StateMachine_Test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module StateMachine_Test
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.State_Machine_default
+Compiling module xil_defaultlib.StateMachine_Test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot StateMachine_Test_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2160.301 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'StateMachine_Test' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj StateMachine_Test_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.sim/sim_1/behav/xsim'
+"xelab -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 83e735c7fab44058940f9cbf4c18ba67 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot StateMachine_Test_behav xil_defaultlib.StateMachine_Test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2160.301 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon Feb 12 18:10:00 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/runme.log
+[Mon Feb 12 18:10:00 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon Feb 12 18:17:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/runme.log
+[Mon Feb 12 18:17:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
+close_hw
+archive_project {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4_Submission_2_12.xpr.zip} -temp_dir {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/.Xil/Vivado-23788-QPC} -force -include_local_ip_cache -include_config_settings
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/.Xil/Vivado-23788-QPC' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/.Xil/Vivado-23788-QPC/PrjAr/_X_'.
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1209] Adding archive summary file to the project...
+INFO: [Coretcl 2-1214] Preparing project files for archive...
+INFO: [Coretcl 2-1210] Compressing project files and data...
+INFO: [Coretcl 2-1215] Project archived (C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4_Submission_2_12.xpr.zip)
+INFO: [Coretcl 2-1216] To view the archive summary log in GUI, double click on 'Design Sources->Text->archive_project_summary.txt', or open this file from the archived project directory.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 13 00:49:51 2024...
