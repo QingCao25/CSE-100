@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1707790658">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1708044973">
   <File Type="PA-TCL" Name="Top_Module.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Top_Module_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Top_Module_reports.tcl"/>
   <File Type="RDS-RDS" Name="Top_Module.vds"/>
   <File Type="RDS-UTIL" Name="Top_Module_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Top_Module_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Top_Module.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Top_Module_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Top_Module_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/LED_Shifter.v">
+    <File Path="$PSRCDIR/sources_1/new/LED_Shifter_Left.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v"/>
-        <Attr Name="ImportTime" Val="1707786528"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LED_Shifter_Right.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -62,10 +70,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/mux_16.v">
+    <File Path="$PSRCDIR/sources_1/new/mux_6.v">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v"/>
-        <Attr Name="ImportTime" Val="1707787183"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -93,6 +99,26 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../Lab 4/Lab4/Lab4.srcs/sources_1/new/Top_Module.v"/>
         <Attr Name="ImportTime" Val="1707790656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/LED_Shifter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v"/>
+        <Attr Name="ImportTime" Val="1707786528"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux_16.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v"/>
+        <Attr Name="ImportTime" Val="1707787183"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>

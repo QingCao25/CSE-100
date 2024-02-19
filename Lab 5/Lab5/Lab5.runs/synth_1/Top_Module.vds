@@ -2,12 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Feb 12 18:17:40 2024
-# Process ID: 13120
-# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1
+# Start of session at: Thu Feb 15 16:56:17 2024
+# Process ID: 22344
+# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.runs/synth_1
 # Command line: vivado.exe -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
-# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/Top_Module.vds
-# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1\vivado.jou
+# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.runs/synth_1/Top_Module.vds
+# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Module.tcl -notrace
 Command: synth_design -top Top_Module -part xc7a35tcpg236-1
@@ -16,61 +16,60 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 26784 
+INFO: Helper process launched with PID 20888 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 699.613 ; gain = 177.590
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 699.594 ; gain = 178.191
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/Top_Module.v:23]
-INFO: [Synth 8-6157] synthesizing module 'LED_Shifter' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v:23]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v:37]
-INFO: [Synth 8-6157] synthesizing module 'mux_16' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:23]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:31]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:32]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:33]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:34]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:35]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:36]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:37]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:38]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:39]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:40]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:41]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:42]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:43]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:44]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:45]
-WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:46]
-INFO: [Synth 8-6155] done synthesizing module 'mux_16' (1#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/mux_16.v:23]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v:38]
-WARNING: [Synth 8-689] width (16) of port connection 'sel' does not match port width (1) of module 'mux_16' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v:38]
+INFO: [Synth 8-6157] synthesizing module 'Top_Module' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_Shifter_Left' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Left.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Left.v:37]
+INFO: [Synth 8-6157] synthesizing module 'mux_6' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:23]
+WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:31]
+WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:32]
+WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:33]
+WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:34]
+WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:35]
+WARNING: [Synth 8-6104] Input port 'out' has an internal driver [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'mux_6' (1#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/mux_6.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Left.v:38]
+WARNING: [Synth 8-689] width (6) of port connection 'sel' does not match port width (1) of module 'mux_6' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Left.v:38]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
 	Parameter INIT bound to: 1'b0 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
-WARNING: [Synth 8-3848] Net led in module/entity LED_Shifter does not have driver. [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v:29]
-WARNING: [Synth 8-3848] Net o in module/entity LED_Shifter does not have driver. [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'LED_Shifter' (3#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LED_Shifter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'State_Machine' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v:23]
 INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
 	Parameter INIT bound to: 1'b1 
 	Parameter IS_C_INVERTED bound to: 1'b0 
 	Parameter IS_D_INVERTED bound to: 1'b0 
 	Parameter IS_R_INVERTED bound to: 1'b0 
-INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
-WARNING: [Synth 8-7023] instance 'Initial' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v:64]
-WARNING: [Synth 8-7023] instance 'FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v:65]
-INFO: [Synth 8-6155] done synthesizing module 'State_Machine' (4#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/State_Machine.v:23]
-INFO: [Synth 8-6157] synthesizing module 'qsec_clks' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:24]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+WARNING: [Synth 8-3848] Net led in module/entity LED_Shifter_Left does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Left.v:29]
+WARNING: [Synth 8-3848] Net o in module/entity LED_Shifter_Left does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Left.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Shifter_Left' (3#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Left.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_Shifter_Right' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Right.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Right.v:37]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Right.v:38]
+WARNING: [Synth 8-689] width (6) of port connection 'sel' does not match port width (1) of module 'mux_6' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Right.v:38]
+WARNING: [Synth 8-3848] Net led in module/entity LED_Shifter_Right does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Right.v:29]
+WARNING: [Synth 8-3848] Net o in module/entity LED_Shifter_Right does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Right.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Shifter_Right' (4#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LED_Shifter_Right.v:23]
+INFO: [Synth 8-6157] synthesizing module 'State_Machine' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/State_Machine.v:23]
+WARNING: [Synth 8-7023] instance 'Initial' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/State_Machine.v:64]
+WARNING: [Synth 8-7023] instance 'FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/State_Machine.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'State_Machine' (5#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/State_Machine.v:23]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:49]
+WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:49]
+INFO: [Synth 8-6157] synthesizing module 'qsec_clks' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:58]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'IBUF' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (6#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
 INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: float 
@@ -120,64 +119,71 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/s
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (6#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (7#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'BUFG' (7#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (8#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:58]
-INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:187]
-INFO: [Synth 8-6157] synthesizing module 'count4_MSCLK_clkcntrl4' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:324]
-INFO: [Synth 8-6155] done synthesizing module 'count4_MSCLK_clkcntrl4' (9#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:324]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (8#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (9#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:58]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:187]
+INFO: [Synth 8-6157] synthesizing module 'count4_MSCLK_clkcntrl4' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:324]
+INFO: [Synth 8-6155] done synthesizing module 'count4_MSCLK_clkcntrl4' (10#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:324]
 INFO: [Synth 8-6157] synthesizing module 'AND2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
-INFO: [Synth 8-6155] done synthesizing module 'AND2' (10#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (11#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
 INFO: [Synth 8-6157] synthesizing module 'BUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
-INFO: [Synth 8-6155] done synthesizing module 'BUF' (11#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
-INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (12#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:187]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (12#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (13#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:187]
 INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
 	Parameter PROG_USR bound to: FALSE - type: string 
 	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: float 
-INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (13#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
-INFO: [Synth 8-6155] done synthesizing module 'qsec_clks' (14#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/qsec_clks.v:24]
-INFO: [Synth 8-6157] synthesizing module 'RingCounter' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/RingCounter.v:23]
-WARNING: [Synth 8-7023] instance 'ff_00' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/RingCounter.v:29]
-WARNING: [Synth 8-7023] instance 'ff_01' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/RingCounter.v:30]
-WARNING: [Synth 8-7023] instance 'ff_02' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/RingCounter.v:31]
-WARNING: [Synth 8-7023] instance 'ff_03' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/RingCounter.v:32]
-INFO: [Synth 8-6155] done synthesizing module 'RingCounter' (15#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/RingCounter.v:23]
-INFO: [Synth 8-6157] synthesizing module 'selector' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/selector.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'selector' (16#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/new/selector.v:23]
-INFO: [Synth 8-6157] synthesizing module 'hex7seg' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/imports/new/hex7seg.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (17#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/imports/sources_1/imports/new/hex7seg.v:23]
-INFO: [Synth 8-6157] synthesizing module 'countUD5L' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/countUD5L.v:23]
-WARNING: [Synth 8-7023] instance 'ff_01' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/countUD5L.v:35]
-WARNING: [Synth 8-7023] instance 'ff_02' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/countUD5L.v:36]
-WARNING: [Synth 8-7023] instance 'ff_03' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/countUD5L.v:37]
-WARNING: [Synth 8-7023] instance 'ff_04' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/countUD5L.v:38]
-WARNING: [Synth 8-7023] instance 'ff_05' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/countUD5L.v:39]
-INFO: [Synth 8-6155] done synthesizing module 'countUD5L' (18#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/countUD5L.v:23]
-INFO: [Synth 8-6157] synthesizing module 'LFSR' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LFSR.v:23]
-WARNING: [Synth 8-7023] instance 'sh_00' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LFSR.v:28]
-WARNING: [Synth 8-7023] instance 'sh_17' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LFSR.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'LFSR' (19#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/LFSR.v:23]
-WARNING: [Synth 8-3848] Net dp in module/entity Top_Module does not have driver. [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/Top_Module.v:29]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (20#1) [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/sources_1/new/Top_Module.v:23]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[15]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[14]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[13]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[12]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[11]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[10]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[9]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[8]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[7]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[6]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[5]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[4]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[3]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[2]
-WARNING: [Synth 8-3331] design LED_Shifter has unconnected port Off[1]
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (14#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+INFO: [Synth 8-6155] done synthesizing module 'qsec_clks' (15#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/qsec_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'RingCounter' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/RingCounter.v:23]
+WARNING: [Synth 8-7023] instance 'ff_00' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/RingCounter.v:29]
+WARNING: [Synth 8-7023] instance 'ff_01' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/RingCounter.v:30]
+WARNING: [Synth 8-7023] instance 'ff_02' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/RingCounter.v:31]
+WARNING: [Synth 8-7023] instance 'ff_03' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/RingCounter.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'RingCounter' (16#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/RingCounter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'selector' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'selector' (17#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/new/selector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/imports/new/hex7seg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (18#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/imports/sources_1/imports/new/hex7seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'countUD5L' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/countUD5L.v:23]
+WARNING: [Synth 8-7023] instance 'ff_01' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/countUD5L.v:35]
+WARNING: [Synth 8-7023] instance 'ff_02' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/countUD5L.v:36]
+WARNING: [Synth 8-7023] instance 'ff_03' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/countUD5L.v:37]
+WARNING: [Synth 8-7023] instance 'ff_04' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/countUD5L.v:38]
+WARNING: [Synth 8-7023] instance 'ff_05' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/countUD5L.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'countUD5L' (19#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/countUD5L.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LFSR' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LFSR.v:23]
+WARNING: [Synth 8-7023] instance 'sh_00' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LFSR.v:28]
+WARNING: [Synth 8-7023] instance 'sh_17' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LFSR.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR' (20#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/LFSR.v:23]
+WARNING: [Synth 8-3848] Net dp in module/entity Top_Module does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:29]
+WARNING: [Synth 8-3848] Net Rscored in module/entity Top_Module does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:35]
+WARNING: [Synth 8-3848] Net Rwon in module/entity Top_Module does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:35]
+WARNING: [Synth 8-3848] Net Lwon in module/entity Top_Module does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:35]
+WARNING: [Synth 8-3848] Net Lscored in module/entity Top_Module does not have driver. [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Module' (21#1) [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/sources_1/new/Top_Module.v:23]
+WARNING: [Synth 8-3331] design LED_Shifter_Right has unconnected port Off[5]
+WARNING: [Synth 8-3331] design LED_Shifter_Right has unconnected port Off[4]
+WARNING: [Synth 8-3331] design LED_Shifter_Right has unconnected port Off[3]
+WARNING: [Synth 8-3331] design LED_Shifter_Right has unconnected port Off[2]
+WARNING: [Synth 8-3331] design LED_Shifter_Right has unconnected port Off[1]
+WARNING: [Synth 8-3331] design LED_Shifter_Left has unconnected port Off[5]
+WARNING: [Synth 8-3331] design LED_Shifter_Left has unconnected port Off[4]
+WARNING: [Synth 8-3331] design LED_Shifter_Left has unconnected port Off[3]
+WARNING: [Synth 8-3331] design LED_Shifter_Left has unconnected port Off[2]
+WARNING: [Synth 8-3331] design LED_Shifter_Left has unconnected port Off[1]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[9]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[8]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[7]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[6]
 WARNING: [Synth 8-3331] design Top_Module has unconnected port dp
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[6]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 762.312 ; gain = 240.289
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 763.074 ; gain = 241.672
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[6] with 1st driver pin 'LF_Shift/sh_17[7]/Q'
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[6] with 2nd driver pin 'GND'
@@ -192,10 +198,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 762.312 ; gain = 240.289
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 763.074 ; gain = 241.672
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 762.312 ; gain = 240.289
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 763.074 ; gain = 241.672
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -203,38 +209,38 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
+Parsing XDC File [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 883.469 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 887.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   AND2 => LUT2: 1 instances
   BUF => LUT1: 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 883.469 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 887.211 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -289,14 +295,37 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[9]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[8]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[7]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port led[6]
 WARNING: [Synth 8-3331] design Top_Module has unconnected port dp
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Module has unconnected port sw[6]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\oogabooga/FF[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Right/ff_3 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Right/ff_4 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Right/ff_5 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Left/ff_0 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Left/ff_1 )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Left/ff_2 )
+WARNING: [Synth 8-3332] Sequential element (Left/ff_0) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (Left/ff_1) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (Left/ff_2) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (Right/ff_3) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (Right/ff_4) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (Right/ff_5) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (oogabooga/FF[5]) is unused and will be removed from module Top_Module.
 WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_44/MSCLK_CNT4ff_3) is unused and will be removed from module Top_Module.
 WARNING: [Synth 8-3332] Sequential element (LF_Shift/sh_17[7]) is unused and will be removed from module Top_Module.
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[6] with 1st driver pin 'LF_Shift/sh_17[7]/Q'
 CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[6] with 2nd driver pin 'GND'
 CRITICAL WARNING: [Synth 8-6858] multi-driven net Q[6] is connected to at least one constant driver which has been preserved, other driver is ignored
+WARNING: [Synth 8-3332] Sequential element (syncBTNU) is unused and will be removed from module Top_Module.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -308,13 +337,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -326,7 +355,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -350,7 +379,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -363,7 +392,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -375,25 +404,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -413,65 +442,66 @@ Report Cell Usage:
 |2     |BUF        |     2|
 |3     |BUFG       |     3|
 |4     |LUT1       |     7|
-|5     |LUT2       |    12|
-|6     |LUT3       |    25|
-|7     |LUT4       |    37|
-|8     |LUT5       |    12|
-|9     |LUT6       |    23|
+|5     |LUT2       |     8|
+|6     |LUT3       |    12|
+|7     |LUT4       |    23|
+|8     |LUT5       |    17|
+|9     |LUT6       |     9|
 |10    |MMCME2_ADV |     1|
 |11    |STARTUPE2  |     1|
-|12    |FDRE       |    73|
-|13    |IBUF       |    21|
-|14    |OBUF       |    27|
-|15    |OBUFT      |     1|
+|12    |FDRE       |    62|
+|13    |IBUF       |     5|
+|14    |OBUF       |    23|
+|15    |OBUFT      |     5|
 +------+-----------+------+
 
 Report Instance Areas: 
 +------+----------------+-------------------------+------+
 |      |Instance        |Module                   |Cells |
 +------+----------------+-------------------------+------+
-|1     |top             |                         |   246|
-|2     |  Game_Counter  |countUD5L                |    10|
-|3     |  LF_Shift      |LFSR                     |    11|
-|4     |  Time_Counter  |countUD5L_0              |    12|
-|5     |  oogabooga     |State_Machine            |    41|
-|6     |  ringcounter   |RingCounter              |    16|
-|7     |  shift         |LED_Shifter              |    37|
-|8     |  slowit        |qsec_clks                |    68|
-|9     |    my_clk_inst |clk_wiz_0                |     4|
-|10    |    slowclk     |clkcntrl4                |    63|
-|11    |      XLXI_37   |count4_MSCLK_clkcntrl4   |     9|
-|12    |      XLXI_38   |count4_MSCLK_clkcntrl4_1 |     9|
-|13    |      XLXI_39   |count4_MSCLK_clkcntrl4_2 |     8|
-|14    |      XLXI_40   |count4_MSCLK_clkcntrl4_3 |     9|
-|15    |      XLXI_44   |count4_MSCLK_clkcntrl4_4 |     6|
-|16    |      XLXI_45   |count4_MSCLK_clkcntrl4_5 |     9|
-|17    |      XLXI_49   |count4_MSCLK_clkcntrl4_6 |     9|
+|1     |top             |                         |   179|
+|2     |  Game_Counter  |countUD5L                |    11|
+|3     |  LF_Shift      |LFSR                     |    12|
+|4     |  Left          |LED_Shifter_Left         |     3|
+|5     |  Right         |LED_Shifter_Right        |     3|
+|6     |  Time_Counter  |countUD5L_0              |    14|
+|7     |  oogabooga     |State_Machine            |    17|
+|8     |  ringcounter   |RingCounter              |    16|
+|9     |  slowit        |qsec_clks                |    68|
+|10    |    my_clk_inst |clk_wiz_0                |     4|
+|11    |    slowclk     |clkcntrl4                |    63|
+|12    |      XLXI_37   |count4_MSCLK_clkcntrl4   |     9|
+|13    |      XLXI_38   |count4_MSCLK_clkcntrl4_1 |     9|
+|14    |      XLXI_39   |count4_MSCLK_clkcntrl4_2 |     8|
+|15    |      XLXI_40   |count4_MSCLK_clkcntrl4_3 |     9|
+|16    |      XLXI_44   |count4_MSCLK_clkcntrl4_4 |     6|
+|17    |      XLXI_45   |count4_MSCLK_clkcntrl4_5 |     9|
+|18    |      XLXI_49   |count4_MSCLK_clkcntrl4_6 |     9|
 +------+----------------+-------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 883.469 ; gain = 361.445
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 3 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 883.469 ; gain = 240.289
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 883.469 ; gain = 361.445
+Synthesis finished with 0 errors, 3 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:25 . Memory (MB): peak = 887.211 ; gain = 241.672
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 887.211 ; gain = 365.809
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 897.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 900.602 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   AND2 => LUT2: 1 instances
   BUF => LUT1: 2 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-57 Infos, 54 Warnings, 5 Critical Warnings and 0 Errors encountered.
+66 Infos, 74 Warnings, 5 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 897.742 ; gain = 607.016
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 897.742 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:35 . Memory (MB): peak = 900.602 ; gain = 609.531
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 900.602 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.runs/synth_1/Top_Module.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5/Lab5.runs/synth_1/Top_Module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 12 18:18:00 2024...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 15 16:56:56 2024...

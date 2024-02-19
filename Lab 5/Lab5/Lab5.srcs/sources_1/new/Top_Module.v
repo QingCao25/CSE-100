@@ -30,25 +30,26 @@ module Top_Module(
     );
     
     wire clk, qsec, digsel;
-    wire foursecs, twosecs, lastled;
-    wire syncbtnL, syncbtnU, syncbtnC;
-    wire shownum, resettimer, rungame, scored, won, flashboth, flashalt, match; 
+    wire foursecs, twosecs, lastledL, lastledR;
+    wire syncbtnL, syncbtnU, syncbtnC, syncbtnR;
+    wire shownum, resettimer, rungame, Lscored, Rscored, Lwon, Rwon, flashboth, flashalt, match; 
     wire [3:0] H, sel, ringcount;
     wire [15:0] selectsplit;
     wire [7:0] rnd;
     wire [4:0] timer;
     wire [4:0] usernum;
     wire [5:0] currentstate;
-
-    LED_Shifter shift(.clk(clk), .In(sw[15:0]),.LD(syncbtnL & currentstate[0]), .Shift(scored), .Off(won & timer[0]), .led(led[15:0]), .lastLED(lastled));
     
+    LED_Shifter_Left Left(.clk(clk), .In(sw[15:10]),.LD(), .Shift(Lscored & Lwon), .Off(Lwon & timer[0]), .led(led[15:10]), .lastLED(lastledL));
+    LED_Shifter_Right Right(.clk(clk), .In(sw[5:0]),.LD(), .Shift(Rscored & Rwon), .Off(Lwon & timer[0]), .led(led[5:0]), .lastLED(lastledR));
+
     
     // State Machine Initialization
-    State_Machine oogabooga(.clk(clk),.go(syncbtnC),.stop(syncbtnU),.foursecs(foursecs),.twosecs(twosecs),.match(match),.lastled(lastled), 
-                            .shownum(shownum),.resettimer(resettimer),.rungame(rungame),.scored(scored),.won(won),.flashboth(flashboth),
+    State_Machine oogabooga(.clk(clk),.go(syncbtnC),.stop(syncbtnR | syncbtnL),.foursecs(foursecs),.twosecs(twosecs),.match(match),.lastled(), 
+                            .shownum(shownum),.resettimer(resettimer),.rungame(rungame),.scored(Lscored | Rscored),.won(Lwon | Rwon),.flashboth(flashboth),
                             .flashalt(flashalt), .currentstate(currentstate));
 
-    qsec_clks slowit (.clkin(clkin), .greset(btnR), .clk(clk), .digsel(digsel), .qsec(qsec));
+    qsec_clks slowit (.clkin(clkin), .greset(btnU), .clk(clk), .digsel(digsel), .qsec(qsec));
     RingCounter ringcounter(.clk(clk), .Advance(digsel), .Q(ringcount));
     assign selectsplit[15:8] = rnd[4:0];
     assign selectsplit[7:0] = usernum;
@@ -68,7 +69,8 @@ module Top_Module(
     FDRE #(.INIT(1'b0)) syncBTNL (.C(clk), .R(1'b0), .CE(1'b1), .D(btnL), .Q(syncbtnL));
     FDRE #(.INIT(1'b0)) syncBTNU (.C(clk), .R(1'b0), .CE(1'b1), .D(btnU), .Q(syncbtnU));
     FDRE #(.INIT(1'b0)) syncBTNC (.C(clk), .R(1'b0), .CE(1'b1), .D(btnC), .Q(syncbtnC));
-    
+    FDRE #(.INIT(1'b0)) syncBTNR (.C(clk), .R(1'b0), .CE(1'b1), .D(btnR), .Q(syncbtnR));
+
     //Anode Logic
     assign an[0] = (~ringcount[0]) | (flashalt & timer[0] | flashboth & timer[0]);
     assign an[1] = (~ringcount[1]) | (flashalt & timer[0] | flashboth & timer[0]);
