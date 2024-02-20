@@ -22,8 +22,9 @@
 
 module LED_Shifter_Left(
     input [5:0] In,
-    input LD,
     input Shift,
+    input fumble,
+    input LD, 
     input [5:0] Off,
     input clk,
     output [5:0] led,
@@ -34,15 +35,18 @@ module LED_Shifter_Left(
     
     assign b[5] = Shift;
     assign b[4:0] = led[5:1];
+    
+    
+    
     mux_6 mux1(.a(b), .b(In), .sel(LD), .out(o));
     mux_6 mux2(.a(out), .b({6{1'b0}}), .sel(Off), .out(led));  
     
-    FDRE #(.INIT(1'b0)) ff_0 (.C(clk), .R(1'b0), .CE(Shift | LD), .D(o[0]), .Q(out[0]));
-    FDRE #(.INIT(1'b0)) ff_1 (.C(clk), .R(1'b0), .CE(Shift | LD), .D(o[1]), .Q(out[1]));
-    FDRE #(.INIT(1'b0)) ff_2 (.C(clk), .R(1'b0), .CE(Shift | LD), .D(o[2]), .Q(out[2]));
-    FDRE #(.INIT(1'b1)) ff_3 (.C(clk), .R(1'b0), .CE(Shift | LD), .D(o[3]), .Q(out[3]));
-    FDRE #(.INIT(1'b1)) ff_4 (.C(clk), .R(1'b0), .CE(Shift | LD), .D(o[4]), .Q(out[4]));
-    FDRE #(.INIT(1'b1)) ff_5 (.C(clk), .R(1'b0), .CE(Shift | LD), .D(o[5]), .Q(out[5]));
+    FDRE #(.INIT(1'b0)) ff_0 (.C(clk), .R(1'b0), .CE(Shift), .D(o[0]), .Q(out[0]));
+    FDRE #(.INIT(1'b0)) ff_1 (.C(clk), .R(1'b0), .CE(Shift), .D(o[1]), .Q(out[1]));
+    FDRE #(.INIT(1'b0)) ff_2 (.C(clk), .R(1'b0), .CE(Shift), .D(o[2]), .Q(out[2]));
+    FDRE #(.INIT(1'b1)) ff_3 (.C(clk), .R(1'b0), .CE(Shift), .D(o[3]), .Q(out[3]));
+    FDRE #(.INIT(1'b1)) ff_4 (.C(clk), .R(1'b0), .CE(Shift), .D(o[4]), .Q(out[4]));
+    FDRE #(.INIT(1'b1)) ff_5 (.C(clk), .R(1'b0), .CE(Shift), .D(o[5]), .Q(out[5]));
 
 
     assign lastLED = &out;    

@@ -32,22 +32,27 @@ module Top_Module(
     wire clk, qsec, digsel;
     wire foursecs, twosecs, lastledL, lastledR;
     wire syncbtnL, syncbtnU, syncbtnC, syncbtnR;
-    wire shownum, resettimer, rungame, Lscored, Rscored, Lwon, Rwon, flashboth, flashalt, match; 
+    wire shownum, resettimer, rungame, scoredL, scoredR, fumbleR, fumbleL, Lwon, Rwon, flashboth, flashalt, match, Rlose, Llose; 
     wire [3:0] H, sel, ringcount;
     wire [15:0] selectsplit;
     wire [7:0] rnd;
     wire [4:0] timer;
-    wire [4:0] usernum;
+    wire [4:0] usernum;   
     wire [5:0] currentstate;
     
-    LED_Shifter_Left Left(.clk(clk), .In(sw[15:10]),.LD(), .Shift(Lscored & Lwon), .Off(Lwon & timer[0]), .led(led[15:10]), .lastLED(lastledL));
-    LED_Shifter_Right Right(.clk(clk), .In(sw[5:0]),.LD(), .Shift(Rscored & Rwon), .Off(Lwon & timer[0]), .led(led[5:0]), .lastLED(lastledR));
+    wire edgeD, slowdown;
+    wire [4:0] timeout;
+    wire cheatbtnL;   
+    
+    LED_Shifter_Left Left(.clk(clk), .In(sw[15:10]), .Shift(scoredL), .fumble(fumbleL),  .Off(Lwon & timer[0]), .led(led[15:10]), .lastLED(lastledL));
+    LED_Shifter_Right Right(.clk(clk), .In(sw[5:0]), .Shift(scoredR), .fumble(fumbleR), .Off(Rwon & timer[0]), .led(led[5:0]), .lastLED(lastledR));
 
     
+    assign cheatbtnL = (~sw[15] & syncbtnR) | (sw[15] & syncbtnL);
     // State Machine Initialization
-    State_Machine oogabooga(.clk(clk),.go(syncbtnC),.stop(syncbtnR | syncbtnL),.foursecs(foursecs),.twosecs(twosecs),.match(match),.lastled(), 
-                            .shownum(shownum),.resettimer(resettimer),.rungame(rungame),.scored(Lscored | Rscored),.won(Lwon | Rwon),.flashboth(flashboth),
-                            .flashalt(flashalt), .currentstate(currentstate));
+    State_Machine oogabooga(.clk(clk),.go(syncbtnC),.stopR(cheatbtnL),.stopL(syncbtnL),.foursecs(foursecs),.twosecs(twosecs),.match(match),.lastledR(lastledR),
+                            .lastledL(lastledL),.shownum(shownum),.resettimer(resettimer),.rungame(rungame),.scoredR(scoredR),.scoredL(scoredL), .fumbleR(fumbleR), .fumbleL(fumbleL), 
+                            .Rwon(Rwon), .Lwon(Lwon),.flashboth(flashboth),.flashalt(flashalt), .currentstate(currentstate));   
 
     qsec_clks slowit (.clkin(clkin), .greset(btnU), .clk(clk), .digsel(digsel), .qsec(qsec));
     RingCounter ringcounter(.clk(clk), .Advance(digsel), .Q(ringcount));
@@ -56,7 +61,7 @@ module Top_Module(
     selector select(.N(selectsplit), .sel(ringcount), .H(H));
     hex7seg hex(.n(H), .seg(seg));
     
-    countUD5L Game_Counter(.clk(clk), .UD(1'b1), .LD(resettimer), .CE(qsec & rungame), .Din({5{1'b1}}), .Q(usernum));
+    countUD5L Game_Counter(.clk(clk), .UD(1'b1), .LD(resettimer), .CE(slowdown & rungame), .Din({5{1'b1}}), .Q(usernum));
     countUD5L Time_Counter(.clk(clk), .UD(1'b0), .LD(currentstate[0] | currentstate[2]), .CE(qsec), .Din({5{1'b0}}), .Q(timer)); 
 
     LFSR LF_Shift (.clk(clk), .run(currentstate[0]), .rnd(rnd)); 
@@ -76,4 +81,10 @@ module Top_Module(
     assign an[1] = (~ringcount[1]) | (flashalt & timer[0] | flashboth & timer[0]);
     assign an[2] = (~ringcount[2]) | (flashalt & ~timer[0] | flashboth & timer[0]) | (~shownum); 
     assign an[3] = (~ringcount[3]) | (flashalt & ~timer[0] | flashboth & timer[0]) | (~shownum); 
+    
+    
+
+    Time_Counter_2 timer2 (.clk(clk), .UD(1'b0), .LD(1'b0), .Din({5{1'b0}}), .CE(qsec), .Q(timeout));
+ 	Edge_Detector edgeDetect(.btnU(timeout[1]), .clk(clk), .Q(edgeD));
+ 	assign slowdown = ~sw[14]&qsec | sw[14]&edgeD;
 endmodule

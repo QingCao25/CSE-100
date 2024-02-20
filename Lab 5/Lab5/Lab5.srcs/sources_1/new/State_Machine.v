@@ -19,17 +19,21 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-   
 module State_Machine(
-    input go, stop, foursecs, twosecs, match, lastled, clk,
-    output shownum, resettimer, rungame, scored, won, flashboth, flashalt, 
-    output [5:0] currentstate
-    );
+    input go, stopR, stopL, foursecs, twosecs, match, lastledR, lastledL, clk,
+    output shownum, resettimer, rungame, scoredR, scoredL, fumbleR, fumbleL, Rwon, Lwon, flashboth, flashalt,
+    output [5:0] currentstate 
+    ); 
     
     
     wire idle, roundstart, decrement, roundwin, roundlose, gamewin;
     wire next_idle, next_roundstart, next_decrement, next_roundwin, next_roundlose, next_gamewin;
     wire [5:0] NS;
+    
+    wire lastledRout, lastledLout; 
+    FDRE #(.INIT(1'b0)) lastWinR(.C(clk), .CE(currentstate[0]), .D(lastledR), .Q(lastledRout));
+    FDRE #(.INIT(1'b0)) lastWinL(.C(clk), .CE(currentstate[0]), .D(lastledL), .Q(lastledLout));   
+
     
     assign idle = currentstate[0];
     assign roundstart = currentstate[1];
@@ -46,20 +50,24 @@ module State_Machine(
     assign NS[5] = next_gamewin;
     
     
-    assign next_idle = (idle & ~go) | (foursecs & roundlose) | (foursecs & roundwin & ~lastled);//
+    assign next_idle = (idle & ~go) | (foursecs & roundlose) | (foursecs & roundwin & ~lastledRout & ~lastledLout);//
     assign next_roundstart = (roundstart & ~twosecs) | (idle & go);//
-    assign next_decrement = (decrement & ~stop) | (roundstart & twosecs);//
-    assign next_roundlose = (decrement & ~match & stop) | (roundlose & ~foursecs);//
-    assign next_roundwin = (decrement & match & stop) | (roundwin & ~foursecs);//
-    assign next_gamewin = (roundwin & lastled & foursecs) | (gamewin); //
+    assign next_decrement = (decrement & ~stopR & ~stopL) | (roundstart & twosecs);//
+    assign next_roundlose = (decrement & ~match &( stopR | stopL)) | (roundlose & ~foursecs);//
+    assign next_roundwin = (decrement & match & (stopR | stopL)) | (roundwin & ~foursecs);//
+    assign next_gamewin = (roundwin & (lastledRout | lastledLout) & foursecs) | (gamewin); //
     
     assign shownum = currentstate[1] | currentstate[2] | currentstate[3] | currentstate[4] | currentstate[5];//
     assign resettimer = ~currentstate[5] & go;//
     assign rungame = currentstate[2];//
-    assign scored = match & ~lastled & currentstate[2] & stop;//
-    assign won = currentstate[5];//
+    assign scoredR = match & ~lastledR & ~lastledL & currentstate[2] & stopR;//
+    assign scoredL = match & ~lastledR & ~lastledL & currentstate[2] & stopL; 
+    assign fumbleR = currentstate[3] & stopR;
+    assign fumbleL = currentstate[3] & stopL;
+    assign Rwon = currentstate[5];//
     assign flashboth = currentstate[4];//
     assign flashalt = currentstate[3];//
+
     
     FDRE #(.INIT(1'b1)) Initial(.C(clk), .CE(1'b1), .D(NS[0]), .Q(currentstate[0]));
     FDRE #(.INIT(1'b0)) FF[5:1](.C({5{clk}}), .CE({5{1'b1}}), .D(NS[5:1]), .Q(currentstate[5:1]));

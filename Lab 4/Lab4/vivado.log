@@ -2,22 +2,20 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Feb 13 23:43:23 2024
-# Process ID: 10932
-# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5760 C:\Users\qinyu\OneDrive\Desktop\CSE100\CSE-100\Lab 4\Lab4\Lab4.xpr
-# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/vivado.log
-# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4\vivado.jou
+# Start of session at: Mon Feb 19 01:54:53 2024
+# Process ID: 29612
+# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28156 C:\Users\qinyu\Desktop\CSE 100\CSE-100\Lab 4\Lab4\Lab4.xpr
+# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/vivado.log
+# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 4/Lab4/Lab4.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4' since last save.
+open_project {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.xpr}
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
-open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 718.500 ; gain = 105.270
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Feb 14 01:35:36 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 19 02:55:16 2024...
