@@ -1,0 +1,7 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/lorti/.Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 736e0621748d4a6da27cb8e6ba5d93f2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SM_test_behav xil_defaultlib.SM_test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <ST> not found while processing module instance <UUT> [C:/Users/lorti/Desktop/CSE100/Lab5_HelpppAlmostdone.xpr/Lab4/Lab4.srcs/sim_1/new/test1.v:30]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

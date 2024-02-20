@@ -1,0 +1,521 @@
+
+*** Running vivado
+    with args -log TopMod.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopMod.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source TopMod.tcl -notrace
+Command: synth_design -top TopMod -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 37692 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 699.277 ; gain = 176.523
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TopMod' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/TopMod.v:23]
+INFO: [Synth 8-6157] synthesizing module 'qsec_clks' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:58]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 9.125000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 36.500000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:39813]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (4#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:58]
+INFO: [Synth 8-6157] synthesizing module 'clkcntrl4' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:187]
+INFO: [Synth 8-6157] synthesizing module 'count4_MSCLK_clkcntrl4' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:324]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (5#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6155] done synthesizing module 'count4_MSCLK_clkcntrl4' (6#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:324]
+INFO: [Synth 8-6157] synthesizing module 'AND2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6155] done synthesizing module 'AND2' (7#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:466]
+INFO: [Synth 8-6157] synthesizing module 'BUF' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'BUF' (8#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1021]
+INFO: [Synth 8-6155] done synthesizing module 'clkcntrl4' (9#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:187]
+INFO: [Synth 8-6157] synthesizing module 'STARTUPE2' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+	Parameter PROG_USR bound to: FALSE - type: string 
+	Parameter SIM_CCLK_FREQ bound to: 0.000000 - type: float 
+INFO: [Synth 8-6155] done synthesizing module 'STARTUPE2' (10#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:77870]
+INFO: [Synth 8-6155] done synthesizing module 'qsec_clks' (11#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v:24]
+INFO: [Synth 8-6157] synthesizing module 'LFSR' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FDRE__parameterized0' [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE__parameterized0' (11#1) [C:/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:13664]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR' (12#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Time_Counter' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v:23]
+WARNING: [Synth 8-7023] instance 'ff_01' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v:35]
+WARNING: [Synth 8-7023] instance 'ff_02' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v:36]
+WARNING: [Synth 8-7023] instance 'ff_03' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v:37]
+WARNING: [Synth 8-7023] instance 'ff_04' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v:38]
+WARNING: [Synth 8-7023] instance 'ff_05' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Time_Counter' (13#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'timecounter2' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v:23]
+WARNING: [Synth 8-7023] instance 'ff_01' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v:35]
+WARNING: [Synth 8-7023] instance 'ff_02' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v:36]
+WARNING: [Synth 8-7023] instance 'ff_03' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v:37]
+WARNING: [Synth 8-7023] instance 'ff_04' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v:38]
+WARNING: [Synth 8-7023] instance 'ff_05' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'timecounter2' (14#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EdgeDetector' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/EdgeDetector.v:23]
+WARNING: [Synth 8-7023] instance 'FF_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/EdgeDetector.v:30]
+WARNING: [Synth 8-7023] instance 'FF_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/EdgeDetector.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'EdgeDetector' (15#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/EdgeDetector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Game_Counter' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v:23]
+WARNING: [Synth 8-7023] instance 'ff_01' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v:35]
+WARNING: [Synth 8-7023] instance 'ff_02' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v:36]
+WARNING: [Synth 8-7023] instance 'ff_03' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v:37]
+WARNING: [Synth 8-7023] instance 'ff_04' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v:38]
+WARNING: [Synth 8-7023] instance 'ff_05' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'Game_Counter' (16#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v:23]
+INFO: [Synth 8-6157] synthesizing module 'StateMachine' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/StateMachine.v:23]
+WARNING: [Synth 8-7023] instance 'Q0_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/StateMachine.v:74]
+WARNING: [Synth 8-7023] instance 'Q2_FF' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/StateMachine.v:75]
+INFO: [Synth 8-6155] done synthesizing module 'StateMachine' (17#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/StateMachine.v:23]
+WARNING: [Synth 8-7023] instance 'ST' of module 'StateMachine' has 21 connections declared, but only 19 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/TopMod.v:72]
+INFO: [Synth 8-6157] synthesizing module 'RingCounter' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v:22]
+WARNING: [Synth 8-7023] instance 'FF_0' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v:28]
+WARNING: [Synth 8-7023] instance 'FF_1' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v:29]
+WARNING: [Synth 8-7023] instance 'FF_2' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v:30]
+WARNING: [Synth 8-7023] instance 'FF_3' of module 'FDRE' has 5 connections declared, but only 4 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'RingCounter' (18#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Selector' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Selector.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'Selector' (19#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Selector.v:22]
+INFO: [Synth 8-6157] synthesizing module 'hex7seg' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/hexseg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hex7seg' (20#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/hexseg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LED_Shifter' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LDShifer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (21#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/mux.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'j' does not match port width (6) of module 'mux' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LDShifer.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'LED_Shifter' (22#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LDShifer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Flipp_LED' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Flipp_LED.v:23]
+WARNING: [Synth 8-3848] Net dp in module/entity Flipp_LED does not have driver. [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Flipp_LED.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'Flipp_LED' (23#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Flipp_LED.v:23]
+WARNING: [Synth 8-7023] instance 'flips' of module 'Flipp_LED' has 11 connections declared, but only 10 given [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/TopMod.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'TopMod' (24#1) [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/TopMod.v:23]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port led[9]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port led[8]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port led[7]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port led[6]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port dp
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port code[9]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port code[8]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port code[7]
+WARNING: [Synth 8-3331] design Flipp_LED has unconnected port code[6]
+WARNING: [Synth 8-3331] design LED_Shifter has unconnected port code[9]
+WARNING: [Synth 8-3331] design LED_Shifter has unconnected port code[8]
+WARNING: [Synth 8-3331] design LED_Shifter has unconnected port code[7]
+WARNING: [Synth 8-3331] design LED_Shifter has unconnected port take_in[9]
+WARNING: [Synth 8-3331] design LED_Shifter has unconnected port take_in[8]
+WARNING: [Synth 8-3331] design LED_Shifter has unconnected port take_in[7]
+WARNING: [Synth 8-3331] design LED_Shifter has unconnected port take_in[6]
+WARNING: [Synth 8-3331] design StateMachine has unconnected port HalfSecs
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[13]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[12]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[11]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[10]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[9]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[8]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[3]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[2]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[1]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 763.109 ; gain = 240.355
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[7] with 1st driver pin 'test/ff_7/Q' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[7] with 2nd driver pin 'GND' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v:40]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 763.109 ; gain = 240.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 763.109 ; gain = 240.355
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopMod_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopMod_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 891.867 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  AND2 => LUT2: 1 instances
+  BUF => LUT1: 2 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 891.867 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 48    
+	   4 Input      1 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module TopMod 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      5 Bit         XORs := 3     
+Module count4_MSCLK_clkcntrl4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
+Module LFSR 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
+Module Time_Counter 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
+Module timecounter2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
+Module Game_Counter 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 9     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design TopMod has unconnected port led[9]
+WARNING: [Synth 8-3331] design TopMod has unconnected port led[8]
+WARNING: [Synth 8-3331] design TopMod has unconnected port led[7]
+WARNING: [Synth 8-3331] design TopMod has unconnected port led[6]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[13]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[12]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[11]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[10]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[9]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[8]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[7]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[6]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[5]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[4]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[3]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[2]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[1]
+WARNING: [Synth 8-3331] design TopMod has unconnected port sw[0]
+WARNING: [Synth 8-3332] Sequential element (slowit/slowclk/XLXI_44/MSCLK_CNT4ff_3) is unused and will be removed from module TopMod.
+WARNING: [Synth 8-3332] Sequential element (test/ff_7) is unused and will be removed from module TopMod.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[7] with 1st driver pin 'test/ff_7/Q' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v:40]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q[7] with 2nd driver pin 'GND' [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v:40]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v:40]
+WARNING: [Synth 8-3332] Sequential element (timer2/ff_01) is unused and will be removed from module TopMod.
+WARNING: [Synth 8-3332] Sequential element (timer2/ff_02) is unused and will be removed from module TopMod.
+WARNING: [Synth 8-3332] Sequential element (timer2/ff_03) is unused and will be removed from module TopMod.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |AND2       |     1|
+|2     |BUF        |     2|
+|3     |BUFG       |     3|
+|4     |LUT1       |     7|
+|5     |LUT2       |    17|
+|6     |LUT3       |    13|
+|7     |LUT4       |    37|
+|8     |LUT5       |    29|
+|9     |LUT6       |    16|
+|10    |MMCME2_ADV |     1|
+|11    |STARTUPE2  |     1|
+|12    |FDRE       |    74|
+|13    |IBUF       |     7|
+|14    |OBUF       |    24|
+|15    |OBUFT      |     4|
++------+-----------+------+
+
+Report Instance Areas: 
++------+----------------+-------------------------+------+
+|      |Instance        |Module                   |Cells |
++------+----------------+-------------------------+------+
+|1     |top             |                         |   236|
+|2     |  GCD           |Game_Counter             |     9|
+|3     |  ST            |StateMachine             |    27|
+|4     |  edgeUP        |EdgeDetector             |     4|
+|5     |  flips         |Flipp_LED                |    39|
+|6     |  ringer        |RingCounter              |    18|
+|7     |  slowit        |qsec_clks                |    68|
+|8     |    my_clk_inst |clk_wiz_0                |     4|
+|9     |    slowclk     |clkcntrl4                |    63|
+|10    |      XLXI_37   |count4_MSCLK_clkcntrl4   |     9|
+|11    |      XLXI_38   |count4_MSCLK_clkcntrl4_0 |     9|
+|12    |      XLXI_39   |count4_MSCLK_clkcntrl4_1 |     8|
+|13    |      XLXI_40   |count4_MSCLK_clkcntrl4_2 |     9|
+|14    |      XLXI_44   |count4_MSCLK_clkcntrl4_3 |     6|
+|15    |      XLXI_45   |count4_MSCLK_clkcntrl4_4 |     9|
+|16    |      XLXI_49   |count4_MSCLK_clkcntrl4_5 |     9|
+|17    |  test          |LFSR                     |    15|
+|18    |  timer         |Time_Counter             |    15|
+|19    |  timer2        |timecounter2             |     4|
++------+----------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 23 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 891.867 ; gain = 240.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 891.867 ; gain = 369.113
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.270 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  AND2 => LUT2: 1 instances
+  BUF => LUT1: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 81 Warnings, 5 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 901.270 ; gain = 613.996
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 901.270 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.runs/synth_1/TopMod.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopMod_utilization_synth.rpt -pb TopMod_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 19 23:47:45 2024...

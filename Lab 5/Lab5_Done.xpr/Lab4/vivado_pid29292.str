@@ -1,0 +1,815 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:49:42 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 29292
+License: Customer
+
+Current time: 	Mon Feb 19 23:45:01 PST 2024
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 3
+Available disk space: 141 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2019.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	qinyu
+User home directory: C:/Users/qinyu
+User working directory: C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2019.1
+RDI_DATADIR: C:/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: C:/Users/qinyu/AppData/Roaming/Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: C:/Users/qinyu/AppData/Roaming/Xilinx/Vivado/2019.1/
+Vivado layouts directory: C:/Users/qinyu/AppData/Roaming/Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/vivado.log
+Vivado journal file location: 	C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/vivado.jou
+Engine tmp dir: 	C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/.Xil/Vivado-29292-QPC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 676 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\qinyu\Downloads\Lab5_WDONEWWW.xpr\Lab4\Lab4.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/lorti/Desktop/CSE100/Lab5_HelpppAlmostdone.xpr/Lab4/.Xil/Vivado-25824-LauraPC/PrjAr/_X_' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 83 MB (+84118kb) [00:00:07]
+// [Engine Memory]: 655 MB (+535198kb) [00:00:07]
+// [GUI Memory]: 99 MB (+12461kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  1902 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'. 
+// Project name: Lab4; location: C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4; part: xc7a35tcpg236-1
+// [GUI Memory]: 110 MB (+6402kb) [00:00:09]
+// [Engine Memory]: 688 MB (+505kb) [00:00:09]
+dismissDialog("Open Project"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 689 MB. GUI used memory: 54 MB. Current time: 2/19/24, 11:45:02 PM PST
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 39 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), GCD : Game_Counter (gamecount.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// Elapsed time: 13 seconds
+selectCodeEditor("TopMod.v", 202, 250); // cl (w, cl)
+selectCodeEditor("TopMod.v", 202, 250, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 202, 250); // cl (w, cl)
+selectCodeEditor("TopMod.v", 199, 261); // cl (w, cl)
+selectCodeEditor("TopMod.v", 199, 261, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 199, 261); // cl (w, cl)
+selectCodeEditor("TopMod.v", 199, 276); // cl (w, cl)
+selectCodeEditor("TopMod.v", 199, 276, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 199, 276); // cl (w, cl)
+selectCodeEditor("TopMod.v", 206, 305); // cl (w, cl)
+selectCodeEditor("TopMod.v", 206, 305, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 206, 305); // cl (w, cl)
+selectCodeEditor("TopMod.v", 589, 392); // cl (w, cl)
+selectCodeEditor("TopMod.v", 589, 392, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 589, 392); // cl (w, cl)
+selectCodeEditor("TopMod.v", 585, 380); // cl (w, cl)
+selectCodeEditor("TopMod.v", 585, 380, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 585, 380); // cl (w, cl)
+selectCodeEditor("TopMod.v", 530, 396); // cl (w, cl)
+selectCodeEditor("TopMod.v", 530, 396, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 530, 396); // cl (w, cl)
+selectCodeEditor("TopMod.v", 494, 330); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, HalfSlow (HalfSlow.v)]", 2, false); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), slowit : qsec_clks (qsec_clks.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), edgeUP : EdgeDetector (EdgeDetector.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// RDIResource.RDIViews_PROPERTIES: Source File Properties: close view
+// [GUI Memory]: 116 MB (+910kb) [00:02:24]
+// Elapsed time: 46 seconds
+selectCodeEditor("LDShifer.v", 77, 179); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_hw 
+// [Engine Memory]: 723 MB (+625kb) [00:02:26]
+dismissDialog("Open Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // by (cl)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Mon Feb 19 23:47:22 2024] Launched synth_1... Run output will be captured here: C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.runs/synth_1/runme.log [Mon Feb 19 23:47:22 2024] Launched impl_1... Run output will be captured here: C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 726 MB. GUI used memory: 59 MB. Current time: 2/19/24, 11:47:22 PM PST
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 126 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2702 ms.
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,826 MB. GUI used memory: 60 MB. Current time: 2/19/24, 11:49:32 PM PST
+// by (cl):  Auto Connect : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.runs/impl_1/TopMod.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,829 MB (+1121261kb) [00:04:40]
+dismissDialog("Auto Connect"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.runs/impl_1/TopMod.bit"); // am (al, bC)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cl)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.runs/impl_1/TopMod.bit} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // by (cl)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,877 MB. GUI used memory: 60 MB. Current time: 2/19/24, 11:50:47 PM PST
+// Elapsed time: 92 seconds
+selectCodeEditor("TopMod.v", 188, 241); // cl (w, cl)
+// PAResourceOtoP.PAViews_HARDWARE: Hardware: close view
+// Elapsed time: 10 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cl)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// by (cl):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // by (cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), hex : hex7seg (hexseg.v)]", 11, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), sel : Selector (Selector.v)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ringer : RingCounter (RingCounter.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("StateMachine.v", 227, 348); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 227, 348, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 227, 348); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 235, 323); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 235, 323, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 235, 323); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 240, 313); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 240, 313, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 240, 313); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 246, 326); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 246, 326, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 246, 326); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 262, 348); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 262, 348, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 262, 348); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 343, 350); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 343, 350, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 343, 350); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 360, 331); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 360, 331, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 360, 331); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 375, 357); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 375, 357, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 375, 357); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 375, 345); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 375, 346, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 375, 346); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 410, 331); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 410, 331, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 410, 331); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 404, 350); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 404, 350, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 404, 350); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 423, 351); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 423, 351, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 423, 351); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 354, 333); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 354, 333, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 354, 333); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 356, 347); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 356, 347, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 356, 347); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 334, 333); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 334, 333, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 334, 333); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 339, 355); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 339, 355, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 339, 355); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 311, 335); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 311, 335, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 311, 335); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 304, 347); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 304, 347, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 304, 347); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 269, 340); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 150, 311); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 150, 311, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 150, 311); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 146, 285); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 146, 285, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("StateMachine.v", 146, 285); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("StateMachine.v", 281, 167); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopMod.v", 1); // k (j, cl)
+selectCodeEditor("TopMod.v", 220, 248); // cl (w, cl)
+selectCodeEditor("TopMod.v", 156, 218); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), flips : Flipp_LED (Flipp_LED.v)]", 13, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), flips : Flipp_LED (Flipp_LED.v)]", 13, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("Flipp_LED.v", 219, 271); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 271, 194); // cl (w, cl)
+// Elapsed time: 42 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 21, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 21, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 21, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 21, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 21, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 21, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 8, false, false, false, false, false, true); // B (F, cl) - Double Click
+// [GUI Memory]: 125 MB (+3050kb) [00:08:48]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), GCD : Game_Counter (gamecount.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), GCD : Game_Counter (gamecount.v)]", 7, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), edgeUP : EdgeDetector (EdgeDetector.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), test : LFSR (LSFR.v)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), test : LFSR (LSFR.v)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,897 MB. GUI used memory: 64 MB. Current time: 2/19/24, 11:53:52 PM PST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, HalfSlow (HalfSlow.v)]", 16, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, HalfSlow (HalfSlow.v)]", 16, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("HalfSlow.v", 184, 364); // cl (w, cl)
+selectCodeEditor("HalfSlow.v", 140, 422); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Miss_LED (Miss_LED.v)]", 17, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Miss_LED (Miss_LED.v)]", 17, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Elapsed time: 21 seconds
+selectCodeEditor("Miss_LED.v", 150, 328); // cl (w, cl)
+// Elapsed time: 90 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Utility Sources]", 21, true, false, false, false, true, false); // B (F, cl) - Popup Trigger - Node
+selectCodeEditor("Miss_LED.v", 309, 267); // cl (w, cl)
+selectCodeEditor("Miss_LED.v", 309, 267, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Miss_LED.v", 309, 267); // cl (w, cl)
+selectCodeEditor("Miss_LED.v", 282, 182); // cl (w, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), flips : Flipp_LED (Flipp_LED.v)]", 13); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, HalfSlow (HalfSlow.v)]", 14, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Miss_LED (Miss_LED.v)]", 15, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), flips : Flipp_LED (Flipp_LED.v)]", 13, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("TopMod.v", 214, 245); // cl (w, cl)
+// Elapsed time: 20 seconds
+selectCodeEditor("TopMod.v", 219, 278); // cl (w, cl)
+selectCodeEditor("TopMod.v", 162, 169); // cl (w, cl)
+selectCodeEditor("TopMod.v", 259, 288); // cl (w, cl)
+selectCodeEditor("TopMod.v", 259, 288, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 259, 288); // cl (w, cl)
+selectCodeEditor("TopMod.v", 258, 301); // cl (w, cl)
+selectCodeEditor("TopMod.v", 258, 301, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 258, 301); // cl (w, cl)
+selectCodeEditor("TopMod.v", 258, 328); // cl (w, cl)
+selectCodeEditor("TopMod.v", 258, 328, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 258, 328); // cl (w, cl)
+selectCodeEditor("TopMod.v", 264, 359); // cl (w, cl)
+selectCodeEditor("TopMod.v", 264, 359, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 264, 359); // cl (w, cl)
+selectCodeEditor("TopMod.v", 278, 395); // cl (w, cl)
+selectCodeEditor("TopMod.v", 278, 395, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 278, 395); // cl (w, cl)
+selectCodeEditor("TopMod.v", 275, 383); // cl (w, cl)
+selectCodeEditor("TopMod.v", 275, 383, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 275, 383); // cl (w, cl)
+selectCodeEditor("TopMod.v", 277, 402); // cl (w, cl)
+selectCodeEditor("TopMod.v", 277, 402, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 277, 402); // cl (w, cl)
+selectCodeEditor("TopMod.v", 298, 438); // cl (w, cl)
+selectCodeEditor("TopMod.v", 208, 243); // cl (w, cl)
+selectCodeEditor("TopMod.v", 207, 243, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 206, 243); // cl (w, cl)
+selectCodeEditor("TopMod.v", 170, 263); // cl (w, cl)
+selectCodeEditor("TopMod.v", 170, 263, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 170, 263); // cl (w, cl)
+selectCodeEditor("TopMod.v", 236, 268, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+selectCodeEditor("TopMod.v", 211, 264); // cl (w, cl)
+selectCodeEditor("TopMod.v", 211, 264, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 211, 264); // cl (w, cl)
+selectCodeEditor("TopMod.v", 377, 355); // cl (w, cl)
+selectCodeEditor("TopMod.v", 327, 290); // cl (w, cl)
+selectCodeEditor("TopMod.v", 383, 324); // cl (w, cl)
+selectCodeEditor("TopMod.v", 384, 313); // cl (w, cl)
+// Elapsed time: 48 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// k (cl): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cl)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_CANCEL, "Cancel"); // a (k)
+dismissDialog("Text Changed"); // k (cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gamecount.v", 2, false, true); // k (j, cl) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aH, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "HalfSlow.v", 4); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az
+selectCodeEditor("gamecount.v", 213, 130); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "gamecount.v", 2); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("LDShifer.v", 300, 310); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v), right : mux (mux.v)]", 13, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v), right : mux (mux.v)]", 13, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux.v", 3); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 143 seconds
+selectCodeEditor("LDShifer.v", 192, 813); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 99, 505); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 108, 511); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 111, 502); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 157, 534); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 165, 542); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 165, 542, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 165, 542); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 192, 609); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 192, 609, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 192, 609); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 314, 606); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 314, 606, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 314, 606); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 314, 606); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 206, 693); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 206, 693, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 206, 693); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 190, 778); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 170, 874); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 170, 874, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 170, 874); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 181, 942); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 181, 942, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 181, 942); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 201, 892); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("LDShifer.v", 184, 844); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 184, 844, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 184, 844); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 131, 670); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 131, 670, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 131, 670); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 175, 613); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 175, 613, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 175, 613); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 195, 535); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 195, 535, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 195, 535); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 247, 558); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 73 MB. Current time: 2/20/24, 12:23:53 AM PST
+// [GUI Memory]: 132 MB (+1282kb) [00:41:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  1100 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 73 MB. Current time: 2/20/24, 1:36:01 AM PST
+// Elapsed time: 5687 seconds
+selectCodeEditor("LDShifer.v", 164, 899); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 132, 676); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 185, 336); // cl (w, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ringer : RingCounter (RingCounter.v)]", 9, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 8, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), GCD : Game_Counter (gamecount.v)]", 7, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), edgeUP : EdgeDetector (EdgeDetector.v)]", 6, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), edgeUP : EdgeDetector (EdgeDetector.v)]", 6, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), edgeUP : EdgeDetector (EdgeDetector.v)]", 6, false); // B (F, cl)
+selectCodeEditor("EdgeDetector.v", 157, 595); // cl (w, cl)
+selectCodeEditor("EdgeDetector.v", 115, 585); // cl (w, cl)
+// Elapsed time: 63 seconds
+typeControlKey((HResource) null, "EdgeDetector.v", 'c'); // cl (w, cl)
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer2 : timecounter2 (timecounter2.v)]", 5, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("timecounter2.v", 298, 188); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), timer : Time_Counter (Time_counter.v)]", 4, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), test : LFSR (LSFR.v)]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), test : LFSR (LSFR.v)]", 3, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), slowit : qsec_clks (qsec_clks.v)]", 2, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), slowit : qsec_clks (qsec_clks.v)]", 2, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("TopMod.v", 175, 568); // cl (w, cl)
+selectCodeEditor("TopMod.v", 175, 779); // cl (w, cl)
+selectCodeEditor("TopMod.v", 152, 875); // cl (w, cl)
+selectCodeEditor("TopMod.v", 152, 879); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "btnL"); // l (aT, cl)
+selectCodeEditor("TopMod.v", 476, 881); // cl (w, cl)
+selectCodeEditor("TopMod.v", 452, 815); // cl (w, cl)
+selectCodeEditor("TopMod.v", 501, 788); // cl (w, cl)
+selectCodeEditor("TopMod.v", 501, 788, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 501, 788); // cl (w, cl)
+selectCodeEditor("TopMod.v", 499, 761); // cl (w, cl)
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "play1"); // l (aT, cl)
+selectCodeEditor("TopMod.v", 191, 928); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sw[15]"); // l (aT, cl)
+selectCodeEditor("TopMod.v", 273, 829, false, false, false, true, false); // cl (w, cl) - Popup Trigger
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "sw[14]", true); // l (aT, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("TopMod.v", 364, 1027); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("TopMod.v", 268, 1006); // cl (w, cl)
+selectCodeEditor("TopMod.v", 268, 1006, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 351, 1032); // cl (w, cl)
+typeControlKey((HResource) null, "TopMod.v", 'c'); // cl (w, cl)
+// Elapsed time: 45 seconds
+selectCodeEditor("TopMod.v", 136, 973); // cl (w, cl)
+selectCodeEditor("TopMod.v", 136, 973, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 136, 973); // cl (w, cl)
+typeControlKey((HResource) null, "TopMod.v", 'c'); // cl (w, cl)
+// Elapsed time: 52 seconds
+selectCodeEditor("TopMod.v", 74, 433); // cl (w, cl)
+selectCodeEditor("TopMod.v", 74, 433, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 241, 453); // cl (w, cl)
+selectCodeEditor("TopMod.v", 241, 453, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 206, 362); // cl (w, cl)
+selectCodeEditor("TopMod.v", 206, 362, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 209, 347); // cl (w, cl)
+selectCodeEditor("TopMod.v", 209, 347, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 221, 348); // cl (w, cl)
+selectCodeEditor("TopMod.v", 221, 348, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 460, 336); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectCodeEditor("TopMod.v", 104, 351); // cl (w, cl)
+selectCodeEditor("TopMod.v", 104, 351, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("TopMod.v", 109, 447); // cl (w, cl)
+selectCodeEditor("TopMod.v", 109, 447, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 92, 463); // cl (w, cl)
+selectCodeEditor("TopMod.v", 92, 463, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 55 seconds
+selectCodeEditor("TopMod.v", 374, 472); // cl (w, cl)
+selectCodeEditor("TopMod.v", 374, 472, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 433, 459); // cl (w, cl)
+selectCodeEditor("TopMod.v", 433, 459, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 416, 444); // cl (w, cl)
+selectCodeEditor("TopMod.v", 657, 465); // cl (w, cl)
+selectCodeEditor("TopMod.v", 657, 465, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 412, 427); // cl (w, cl)
+selectCodeEditor("TopMod.v", 548, 375); // cl (w, cl)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "15", true); // l (aT, cl)
+// Elapsed time: 37 seconds
+selectCodeEditor("TopMod.v", 456, 202); // cl (w, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1); // B (F, cl)
+selectCodeEditor("TopMod.v", 500, 166); // cl (w, cl)
+// [GUI Memory]: 141 MB (+1940kb) [01:58:49]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "timecounter2.v", 4); // k (j, cl)
+// Elapsed time: 555 seconds
+selectCodeEditor("timecounter2.v", 508, 535); // cl (w, cl)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopMod.v", 1); // k (j, cl)
+selectCodeEditor("TopMod.v", 323, 306); // cl (w, cl)
+selectCodeEditor("TopMod.v", 323, 306, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 323, 306); // cl (w, cl)
+selectCodeEditor("TopMod.v", 316, 336); // cl (w, cl)
+selectCodeEditor("TopMod.v", 316, 336, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 316, 336); // cl (w, cl)
+selectCodeEditor("TopMod.v", 316, 349); // cl (w, cl)
+selectCodeEditor("TopMod.v", 316, 349, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 316, 349); // cl (w, cl)
+selectCodeEditor("TopMod.v", 321, 369); // cl (w, cl)
+selectCodeEditor("TopMod.v", 321, 369, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 321, 369); // cl (w, cl)
+selectCodeEditor("TopMod.v", 326, 390); // cl (w, cl)
+selectCodeEditor("TopMod.v", 326, 390, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 326, 390); // cl (w, cl)
+selectCodeEditor("TopMod.v", 319, 408); // cl (w, cl)
+selectCodeEditor("TopMod.v", 319, 408, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 319, 408); // cl (w, cl)
+selectCodeEditor("TopMod.v", 321, 399); // cl (w, cl)
+selectCodeEditor("TopMod.v", 321, 399, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 321, 399); // cl (w, cl)
+selectCodeEditor("TopMod.v", 376, 390); // cl (w, cl)
+selectCodeEditor("TopMod.v", 416, 396); // cl (w, cl)
+selectCodeEditor("TopMod.v", 415, 360); // cl (w, cl)
+selectCodeEditor("TopMod.v", 415, 360, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 415, 360); // cl (w, cl)
+selectCodeEditor("TopMod.v", 426, 388); // cl (w, cl)
+selectCodeEditor("TopMod.v", 426, 388, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 426, 388); // cl (w, cl)
+selectCodeEditor("TopMod.v", 425, 400); // cl (w, cl)
+selectCodeEditor("TopMod.v", 425, 400, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 425, 400); // cl (w, cl)
+selectCodeEditor("TopMod.v", 447, 386); // cl (w, cl)
+selectCodeEditor("TopMod.v", 523, 367); // cl (w, cl)
+selectCodeEditor("TopMod.v", 523, 367, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 49 seconds
+selectCodeEditor("TopMod.v", 232, 197); // cl (w, cl)
+selectCodeEditor("TopMod.v", 232, 197, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 232, 197); // cl (w, cl)
+// Elapsed time: 41 seconds
+selectCodeEditor("TopMod.v", 108, 451); // cl (w, cl)
+selectCodeEditor("TopMod.v", 108, 451, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 415 seconds
+selectCodeEditor("TopMod.v", 303, 156); // cl (w, cl)
+selectCodeEditor("TopMod.v", 228, 214); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), flips : Flipp_LED (Flipp_LED.v)]", 15, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), flips : Flipp_LED (Flipp_LED.v)]", 15, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("Flipp_LED.v", 400, 325); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 400, 325, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 415, 373); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 415, 373, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 415, 374); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 437, 390); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 437, 390, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 437, 390); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 451, 416); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 451, 416, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 451, 416); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 449, 442); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 449, 442, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 449, 442); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 452, 428); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 452, 428, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 452, 428); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 449, 413); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 449, 413, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 449, 413); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 446, 394); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 446, 394, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 446, 394); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 479, 372); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 479, 372, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 479, 372); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 468, 393); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 467, 393, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 467, 393); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 446, 341); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 418, 260); // cl (w, cl)
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 10, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), ST : StateMachine (StateMachine.v)]", 10, false, false, false, false, false, true); // B (F, cl) - Double Click
+selectCodeEditor("StateMachine.v", 297, 357); // cl (w, cl)
+// Elapsed time: 12 seconds
+selectCodeEditor("StateMachine.v", 195, 654); // cl (w, cl)
+selectCodeEditor("StateMachine.v", 278, 269); // cl (w, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), slowit : qsec_clks (qsec_clks.v)]", 2); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), flips : Flipp_LED (Flipp_LED.v)]", 13); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v), LS1 : LED_Shifter (LDShifer.v)]", 12, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("LDShifer.v", 274, 385); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 274, 385, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 274, 385); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 279, 469); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 288, 522); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 306, 599); // cl (w, cl)
+// Elapsed time: 26 seconds
+selectCodeEditor("LDShifer.v", 301, 194); // cl (w, cl)
+// Elapsed time: 82 seconds
+selectCodeEditor("LDShifer.v", 221, 983); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 216, 974); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 102, 432); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 102, 432, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 102, 432); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 124, 454); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 124, 454, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 124, 454); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 110, 421); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 110, 421, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 110, 421); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 181, 623); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 181, 623, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 181, 623); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 253, 531); // cl (w, cl)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("LDShifer.v", 253, 527); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 205, 712); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 140, 598); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 308, 674); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 297, 671); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 412, 694); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 503, 826); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 66, 847); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 66, 847, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 66, 847); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 149, 865); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 149, 865); // cl (w, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 79 MB. Current time: 2/20/24, 2:06:05 AM PST
+// Elapsed time: 42 seconds
+selectCodeEditor("LDShifer.v", 149, 865); // cl (w, cl)
+typeControlKey(null, null, 'z');
+selectCodeEditor("LDShifer.v", 247, 812); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 229, 808); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 229, 808, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 315, 809); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 315, 809, false, false, false, false, true); // cl (w, cl) - Double Click
+// Elapsed time: 115 seconds
+selectCodeEditor("LDShifer.v", 244, 655); // cl (w, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopMod.v", 1); // k (j, cl)
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "TopMod.v", 1, true, false); // k (j, cl) - Popup Trigger
+selectMenuItem((HResource) null, "New Horizontal Group"); // JMenuItem (JidePopupMenu)
+selectCodeEditor("TopMod.v", 178, 396); // cl (w, cl)
+selectCodeEditor("TopMod.v", 85, 462); // cl (w, cl)
+selectCodeEditor("TopMod.v", 85, 462, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 85, 462); // cl (w, cl)
+selectCodeEditor("TopMod.v", 139, 468); // cl (w, cl)
+selectCodeEditor("TopMod.v", 300, 487); // cl (w, cl)
+// Elapsed time: 215 seconds
+selectCodeEditor("LDShifer.v", 253, 500); // cl (w, cl)
+selectCodeEditor("LDShifer.v", 253, 500, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("LDShifer.v", 253, 500); // cl (w, cl)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LSFR.v", 5); // k (j, cl)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// Elapsed time: 12 seconds
+selectCodeEditor("Flipp_LED.v", 298, 420); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 298, 430); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 298, 430, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 298, 430); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 262, 419); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 262, 419, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("Flipp_LED.v", 262, 419); // cl (w, cl)
+selectCodeEditor("Flipp_LED.v", 288, 392); // cl (w, cl)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "StateMachine.v", 3); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "LDShifer.v", 1); // k (j, cl)
+// Elapsed time: 219 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Flipp_LED.v", 2); // k (j, cl)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TopMod (TopMod.v)]", 1, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 78 MB. Current time: 2/20/24, 2:36:05 AM PST
+// WARNING: HEventQueue.dispatchEvent() is taking  1005 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 78 MB. Current time: 2/20/24, 5:44:32 AM PST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4472831 ms. Increasing delay to 13418493 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 78 MB. Current time: 2/20/24, 7:14:33 AM PST
+// WARNING: HEventQueue.dispatchEvent() is taking  1082 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 78 MB. Current time: 2/20/24, 8:44:33 AM PST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 971270 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1130 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 79 MB. Current time: 2/20/24, 9:16:17 AM PST
+// WARNING: HEventQueue.dispatchEvent() is taking  1087 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 78 MB. Current time: 2/20/24, 9:46:20 AM PST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6853573 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,903 MB. GUI used memory: 78 MB. Current time: 2/20/24, 12:07:47 PM PST
+// Elapsed time: 36470 seconds
+selectCodeEditor("TopMod.v", 91, 652); // cl (w, cl)
+selectCodeEditor("TopMod.v", 15, 830); // cl (w, cl)
+selectCodeEditor("TopMod.v", 15, 830, false, false, false, false, true); // cl (w, cl) - Double Click
+selectCodeEditor("TopMod.v", 15, 830); // cl (w, cl)
+selectCodeEditor("TopMod.v", 84, 519); // cl (w, cl)
+// Elapsed time: 368 seconds
+selectCodeEditor("TopMod.v", 256, 271); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 33 seconds
+closeMainWindow("Lab4 - [C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.xpr] - Vivado 2019.1"); // cl
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
