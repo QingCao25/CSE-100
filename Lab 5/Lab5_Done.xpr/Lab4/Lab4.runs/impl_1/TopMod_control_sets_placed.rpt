@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Mon Feb 19 23:48:11 2024
-| Host         : QPC running 64-bit major release  (build 9200)
+| Date         : Tue Feb 20 15:47:25 2024
+| Host         : SurfaceQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TopMod_control_sets_placed.rpt
 | Design       : TopMod
 | Device       : xc7a35t
@@ -83,8 +83,8 @@ Table of Contents
 |  slowit/slowclk/MSCLK_CNT4ff_3 | slowit/slowclk/XLXI_49/MSCLK_CNT4ff_2_0 | slowit/slowclk/qsec3 |                1 |              4 |
 |  slowit/slowclk/MSCLK_CNT4ff_3 | ST/CE0                                  |                      |                2 |              5 |
 |  slowit/slowclk/MSCLK_CNT4ff_3 | ST/CE0_1                                |                      |                1 |              5 |
-|  slowit/slowclk/MSCLK_CNT4ff_3 | flips/ff_5_0                            |                      |                2 |              6 |
 |  slowit/slowclk/MSCLK_CNT4ff_3 | flips/CE0                               |                      |                2 |              6 |
+|  slowit/slowclk/MSCLK_CNT4ff_3 | flips/ff_5_0                            |                      |                2 |              6 |
 |  slowit/slowclk/MSCLK_CNT4ff_3 | ST/PS[0]                                |                      |                1 |              7 |
 |  slowit/slowclk/MSCLK_CNT4ff_3 |                                         |                      |                8 |             16 |
 +--------------------------------+-----------------------------------------+----------------------+------------------+----------------+

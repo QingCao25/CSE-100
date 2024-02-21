@@ -22,27 +22,27 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.cache/wt [current_project]
-set_property parent.project_path C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/EdgeDetector.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Flipp_LED.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LDShifer.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Selector.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/StateMachine.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/hexseg.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/mux.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v
-  C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/sources_1/new/TopMod.v
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/EdgeDetector.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/Flipp_LED.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/LDShifer.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/LSFR.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/RingCounter.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/Selector.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/StateMachine.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/Time_counter.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/gamecount.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/hexseg.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/mux.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/imports/Downloads/qsec_clks.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/timecounter2.v}
+  {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/sources_1/new/TopMod.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -52,8 +52,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/qinyu/Downloads/Lab5_WDONEWWW.xpr/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc]
+read_xdc {{C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 5/Lab5_Done.xpr/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

@@ -40,13 +40,16 @@ module Top_Module(
     wire [4:0] usernum;   
     wire [5:0] currentstate;
     
-    wire edgeD, slowdown;
+    wire edgeD, slow;
     wire [4:0] timeout;
     wire cheatbtnL;   
     
-    LED_Shifter_Left Left(.clk(clk), .In(sw[15:10]), .Shift(scoredL), .fumble(fumbleL),  .Off(Lwon & timer[0]), .led(led[15:10]), .lastLED(lastledL));
-    LED_Shifter_Right Right(.clk(clk), .In(sw[5:0]), .Shift(scoredR), .fumble(fumbleR), .Off(Rwon & timer[0]), .led(led[5:0]), .lastLED(lastledR));
+    //LED_Shifter_Left Left(.clk(clk), .In(sw[15:10]), .Shift(scoredL), .fumble(fumbleL),  .Off(Lwon & timer[0]), .led(led[15:10]), .lastLED(lastledL));
+    //LED_Shifter_Right Right(.clk(clk), .In(sw[5:0]), .Shift(scoredR), .fumble(fumbleR), .Off(Rwon & timer[0]), .led(led[5:0]), .lastLED(lastledR));
 
+    wire [5:0] reversed;
+    assign reversed = {led[10], led[11], led[12], led[13], led[14], led[15]};
+    LED_Shifter
     
     assign cheatbtnL = (~sw[15] & syncbtnR) | (sw[15] & syncbtnL);
     // State Machine Initialization
@@ -61,7 +64,7 @@ module Top_Module(
     selector select(.N(selectsplit), .sel(ringcount), .H(H));
     hex7seg hex(.n(H), .seg(seg));
     
-    countUD5L Game_Counter(.clk(clk), .UD(1'b1), .LD(resettimer), .CE(slowdown & rungame), .Din({5{1'b1}}), .Q(usernum));
+    countUD5L Game_Counter(.clk(clk), .UD(1'b1), .LD(resettimer), .CE(slow & rungame), .Din({5{1'b1}}), .Q(usernum));
     countUD5L Time_Counter(.clk(clk), .UD(1'b0), .LD(currentstate[0] | currentstate[2]), .CE(qsec), .Din({5{1'b0}}), .Q(timer)); 
 
     LFSR LF_Shift (.clk(clk), .run(currentstate[0]), .rnd(rnd)); 
@@ -86,5 +89,5 @@ module Top_Module(
 
     Time_Counter_2 timer2 (.clk(clk), .UD(1'b0), .LD(1'b0), .Din({5{1'b0}}), .CE(qsec), .Q(timeout));
  	Edge_Detector edgeDetect(.btnU(timeout[1]), .clk(clk), .Q(edgeD));
- 	assign slowdown = ~sw[14]&qsec | sw[14]&edgeD;
+ 	assign slow = ~sw[14]&qsec | sw[14]&edgeD;
 endmodule

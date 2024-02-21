@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Feb 20 02:28:04 2024
-| Host         : QPC running 64-bit major release  (build 9200)
+| Date         : Tue Feb 20 15:28:07 2024
+| Host         : SurfaceQ running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
 | Design       : Top_Module
 | Device       : 7a35tcpg236-1
@@ -155,7 +155,7 @@ Table of Contents
 | LUT3       |   17 |                 LUT |
 | LUT6       |   14 |                 LUT |
 | LUT2       |   13 |                 LUT |
-| LUT5       |   11 |                 LUT |
+| LUT5       |   10 |                 LUT |
 | LUT1       |    9 |                 LUT |
 | IBUF       |    7 |                  IO |
 | OBUFT      |    5 |                  IO |

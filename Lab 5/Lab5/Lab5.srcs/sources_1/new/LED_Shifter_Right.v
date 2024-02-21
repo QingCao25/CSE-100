@@ -32,10 +32,9 @@ module LED_Shifter_Right(
     );
     
     wire [5:0] o, b, out;
-    wire [5:0] rsplit;
     
-//    assign b[0] = Shift;
-    assign b[0] = (fumble) ? 1'b0 : (Shift) ? 1'b1 : Shift;
+    assign b[0] = Shift;
+//    assign b[0] = fumble;
     assign b[4:1] = led[4:0];
     mux_6 mux1(.a(b), .b(In), .sel(LD), .out(o));
     mux_6 mux2(.a(out), .b({6{1'b0}}), .sel(Off), .out(led));  // win condition
@@ -47,11 +46,7 @@ module LED_Shifter_Right(
     FDRE #(.INIT(1'b0)) ff_4 (.C(clk), .R(1'b0), .CE(Shift | fumble), .D(o[4]), .Q(out[4]));
     FDRE #(.INIT(1'b0)) ff_5 (.C(clk), .R(1'b0), .CE(Shift | fumble), .D(o[5]), .Q(out[5]));
 
-//    assign rsplit[5] = ~fumble;
-//    assign rsplit[4:0] = led[5:1];
-    
-    
-    
+
     assign lastLED = &out; // if all bits in out are 1 then lastled is 1 else 0
 
 endmodule
