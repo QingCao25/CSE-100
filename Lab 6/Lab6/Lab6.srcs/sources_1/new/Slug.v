@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 03/03/2024 04:59:00 PM
+// Create Date: 03/03/2024 07:03:31 PM
 // Design Name: 
-// Module Name: Energy
+// Module Name: Slug
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,19 +20,11 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Energy(
+module Slug(
     input [14:0] h, v,
-    input clk, btnU, frame,
-    output energy
+    output slug
     );
-    wire [14:0] currentval, topbar; 
-
     
-    assign energy = ((h > 20) & (h < 40)) & ((v > topbar) & (v < 232));
-    
-   
-    assign topbar = 40 + currentval;
-    countUD15L energycounter(.clk(clk), .UD(), .CE(((btnU & frame & currentval < 232) | ((currentval > 40) & frame))), .LD(10'b0), .Din(15'd0), .Q(currentval));
-
+    assign slug = ((h > 360) & (h < 376)) & ((v > 312) & (v < 328));
     
 endmodule

@@ -34,6 +34,7 @@ module Top_Module(
     wire [14:0] h, v;
     wire clk;
     wire border, energy;
+    wire player;
     
     assign an[3] = 0;
     assign an[2] = 0;
@@ -43,14 +44,15 @@ module Top_Module(
     assign seg[6:0] = 0;
     assign dp = 0;
    
-    
+    wire frame;
         
-    Syncs sync (.clk(clk), .hsync(Hsync), .vsync(Vsync), .h(h), .v(v));
+    Syncs sync (.clk(clk), .hsync(Hsync), .vsync(Vsync), .h(h), .v(v), .frame(frame));
     labVGA_clks not_so_slow (.clkin(clkin), .greset(btnD), .clk(clk), .digsel(digsel));
-    Color color (.h(h), .v(v), .vgaRed(vgaRed), .vgaBlue(vgaBlue),.vgaGreen(vgaGreen), .border(border));
+    Color color (.h(h), .v(v), .vgaRed(vgaRed), .vgaBlue(vgaBlue),.vgaGreen(vgaGreen), .border(border), .energy(energy), .slug(player));
     
-    Frame frame (.h(h), .v(v), .border(border));
-    Energy engry (.h(h), .v(v), .energy(energy));
+    Frame Border(.h(h), .v(v), .border(border));
+    Energy engry (.h(h), .v(v), .clk(clk), .btnU(btnU), .energy(energy), .frame(frame));
+    Slug SLUGS(.h(h), .v(v), .slug(player));
     
 //    RingCounter ringcounter(.clk(clk), .Advance(digsel), .Q(ringcount));
 //    selector select(.N(), .sel(ringcount), .H(H));

@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Mar  3 18:16:48 2024
+# Process ID: 18920
+# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19940 C:\Users\qinyu\OneDrive\Desktop\CSE100\CSE-100\Lab 6\Lab6\Lab6.xpr
+# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/vivado.log
+# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 727.023 ; gain = 77.828
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Sun Mar  3 18:17:37 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
+reset_run impl_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Mar  3 18:28:39 2024...

@@ -21,7 +21,7 @@
 
 
 module Color(
-    input border, energy,
+    input border, energy, slug,
     input [14:0] h, v,
     output [3:0] vgaRed, vgaGreen, vgaBlue
     );
@@ -30,9 +30,9 @@ module Color(
     
     assign active = {4{((h < 639) & (v < 479))}};
     
-    assign vgaRed = 4'b1111 & active & {4{border}};
-    assign vgaGreen = 4'b1111 & active & {4{border}};
-    assign vgaBlue= 4'b1111 & active & {4{border}};
+    assign vgaRed = (active & {4{border}}) | (active & {4{slug}});
+    assign vgaGreen = (active & {4{border}}) | (active & {4{energy}}) | (active & {4{slug}});
+    assign vgaBlue= active & {4{border}};
     
 
 endmodule

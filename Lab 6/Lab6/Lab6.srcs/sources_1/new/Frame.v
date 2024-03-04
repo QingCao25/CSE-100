@@ -21,10 +21,9 @@
 
 
 module Frame(
-    input h, v,
+    input [14:0] h, v,
     output border
     ); 
     
-//    assign border = ((h < 8) & (h > 631)) & ((v < 8) & (v > 471));
-    assign border = (10'd8 > h > 10'd631 ) | (10'd8 > v > 10'd471);
+    assign border = ((h < 8) | (h > 631)) | ((v < 8) | (v > 471));
 endmodule
