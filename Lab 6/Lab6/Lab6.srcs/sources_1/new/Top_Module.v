@@ -33,7 +33,7 @@ module Top_Module(
     wire digsel, ringcount, H;
     wire [14:0] h, v;
     wire clk;
-    wire border;
+    wire border, energy;
     
     assign an[3] = 0;
     assign an[2] = 0;
@@ -50,7 +50,7 @@ module Top_Module(
     Color color (.h(h), .v(v), .vgaRed(vgaRed), .vgaBlue(vgaBlue),.vgaGreen(vgaGreen), .border(border));
     
     Frame frame (.h(h), .v(v), .border(border));
-    
+    Energy engry (.h(h), .v(v), .energy(energy));
     
 //    RingCounter ringcounter(.clk(clk), .Advance(digsel), .Q(ringcount));
 //    selector select(.N(), .sel(ringcount), .H(H));

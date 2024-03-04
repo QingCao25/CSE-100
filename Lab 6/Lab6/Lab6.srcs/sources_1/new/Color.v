@@ -21,7 +21,7 @@
 
 
 module Color(
-    input border,
+    input border, energy,
     input [14:0] h, v,
     output [3:0] vgaRed, vgaGreen, vgaBlue
     );

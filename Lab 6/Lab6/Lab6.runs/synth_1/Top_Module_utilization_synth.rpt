@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Feb 27 21:59:01 2024
-| Host         : SurfaceQ running 64-bit major release  (build 9200)
+| Date         : Sun Mar  3 17:28:27 2024
+| Host         : QPC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
 | Design       : Top_Module
 | Device       : 7a35tcpg236-1
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   48 |     0 |     20800 |  0.23 |
-|   LUT as Logic          |   48 |     0 |     20800 |  0.23 |
+| Slice LUTs*             |   45 |     0 |     20800 |  0.22 |
+|   LUT as Logic          |   45 |     0 |     20800 |  0.22 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |   30 |     0 |     41600 |  0.07 |
 |   Register as Flip Flop |   30 |     0 |     41600 |  0.07 |
@@ -151,11 +151,11 @@ Table of Contents
 +------------+------+---------------------+
 | FDRE       |   30 |        Flop & Latch |
 | OBUF       |   26 |                  IO |
-| LUT6       |   26 |                 LUT |
+| LUT6       |   21 |                 LUT |
 | LUT5       |   13 |                 LUT |
-| LUT3       |   10 |                 LUT |
+| LUT2       |    9 |                 LUT |
 | LUT4       |    8 |                 LUT |
-| LUT2       |    6 |                 LUT |
+| LUT3       |    6 |                 LUT |
 | BUFG       |    3 |               Clock |
 | IBUF       |    2 |                  IO |
 | STARTUPE2  |    1 |              Others |

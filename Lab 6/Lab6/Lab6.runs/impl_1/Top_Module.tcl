@@ -65,18 +65,18 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 2
+  set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7a35tcpg236-1
   set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/Top_Module.dcp}}
-  read_xdc {{C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc}}
+  add_files -quiet {{C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/Top_Module.dcp}}
+  read_xdc {{C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/constrs_1/imports/Lab2/Basys3_Master.xdc}}
   link_design -top Top_Module -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
