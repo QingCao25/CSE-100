@@ -22,7 +22,7 @@
 
 module Syncs(
     input clk, 
-    output hsync, vsync, frame,
+    output hsync, vsync, frame, half_frame,
     output [14:0] h, v
     );
     
@@ -31,7 +31,9 @@ module Syncs(
     assign hsync = ~((h >= 10'd655) & (h <= 10'd750)); 
     assign vsync = ~((v >= 10'd489) & (v <= 10'd490));
     
-    assign frame = (h== 639) & (v == 479);
+    assign frame = (h== 639) & (v == 479); // goes 1 everytime 1 frame of the screen is displayed
+    assign half_frame = (v == 312) & (h == 232); // goes 1 evertime 1/2 frame of the screen is displayed -> used to increase slug speed 
+    
     
     
     countUD15L hcounter (.clk(clk), .UD(1'b1), .CE(1'b1), .LD(h == 15'd799), .Din(15'b0), .Q(h)); //counts from 0-799 and then resets

@@ -33,28 +33,38 @@ module Top_Module(
     wire digsel, ringcount, H;
     wire [14:0] h, v;
     wire clk;
-    wire border, energy;
-    wire player;
+    wire border, energy, player, frame, half_frame, busL, busM, busR;
     
-    assign an[3] = 0;
-    assign an[2] = 0;
-    assign an[1] = 0;
-    assign an[0] = 0;
+    
         
     assign seg[6:0] = 0;
     assign dp = 0;
    
-    wire frame;
+//   Game_SM StateMachine 
+   
         
-    Syncs sync (.clk(clk), .hsync(Hsync), .vsync(Vsync), .h(h), .v(v), .frame(frame));
+    Syncs sync (.clk(clk), .hsync(Hsync), .vsync(Vsync), .h(h), .v(v), .frame(frame), .half_frame(half_frame));
     labVGA_clks not_so_slow (.clkin(clkin), .greset(btnD), .clk(clk), .digsel(digsel));
-    Color color (.h(h), .v(v), .vgaRed(vgaRed), .vgaBlue(vgaBlue),.vgaGreen(vgaGreen), .border(border), .energy(energy), .slug(player));
+    Color color (.h(h), .v(v), .vgaRed(vgaRed), .vgaBlue(vgaBlue),.vgaGreen(vgaGreen), 
+                .border(border), .energy(energy), .slug(player), 
+                .busL(busL), .busM(busM), .busR(busR));
     
     Frame Border(.h(h), .v(v), .border(border));
     Energy engry (.h(h), .v(v), .clk(clk), .btnU(btnU), .energy(energy), .frame(frame));
-    Slug SLUGS(.h(h), .v(v), .slug(player));
+    Slug SLUGS(.h(h), .v(v), .clk(clk), .btnR(btnR), .btnL(btnL), .slug(player), .frame(frame), .half_frame(half_frame));
+    
+    
+    Bus BUS_Left(.h(h), .v(v), .bus(busR), .shift(15'd0)); // Generates the far left bus with a shift of 0 to the right
+    Bus BUS_Mid(.h(h), .v(v), .bus(busM), .shift(15'd70)); // Generates the mid bus with a shift of XX to the right
+    Bus BUS_Right(.h(h), .v(v), .bus(busL), .shift(15'd140)); // Generates the left bus with a shift of XX to the right 
+
     
 //    RingCounter ringcounter(.clk(clk), .Advance(digsel), .Q(ringcount));
 //    selector select(.N(), .sel(ringcount), .H(H));
 //    hex7seg hex(.n(H), .seg(seg));
+
+    assign an[3] = 1;
+    assign an[2] = 1;
+    assign an[1] = 0;
+    assign an[0] = 0;
 endmodule

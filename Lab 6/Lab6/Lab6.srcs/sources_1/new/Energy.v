@@ -31,8 +31,12 @@ module Energy(
     assign energy = ((h > 20) & (h < 40)) & ((v > topbar) & (v < 232));
     
    
-    assign topbar = 40 + currentval;
-    countUD15L energycounter(.clk(clk), .UD(), .CE(((btnU & frame & currentval < 232) | ((currentval > 40) & frame))), .LD(10'b0), .Din(15'd0), .Q(currentval));
+    assign topbar = 40 + currentval; // allows the topbar to me shifted downwards based on if current val is >= 0
+    countUD15L energycounter(.clk(clk),     
+                            .UD(((topbar >= 40) & btnU)), 
+                            .CE(((btnU & topbar < 232) | (~btnU & topbar > 40)) & frame), 
+                            .LD(10'b0), .Din(15'd0), .Q(currentval));
+
 
     
 endmodule
