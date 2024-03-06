@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Feb 19 01:54:53 2024
+# Process ID: 29612
+# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28156 C:\Users\qinyu\Desktop\CSE 100\CSE-100\Lab 4\Lab4\Lab4.xpr
+# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/vivado.log
+# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 4/Lab4/Lab4.xpr}
+update_compile_order -fileset sources_1

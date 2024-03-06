@@ -22,7 +22,7 @@
 
 module Slug(
     input [14:0] h, v, frame, half_frame,
-    input btnR, btnL, clk,
+    input btnR, btnL, clk, gameover, gamestart,
     output slug
     );
     wire [14:0] movementR, currenttrack, movementL;
@@ -43,12 +43,12 @@ module Slug(
     // counters to move player left and right
     countUD15L MovementR(.clk(clk), 
                         .UD(right_transition),                       
-                        .CE(right_transition & (frame | half_frame)),    
+                        .CE(right_transition & (frame | half_frame) & ~gameover & gamestart),    
                         .LD(10'b0), .Din(15'd0), .Q(movementR));   
     
     countUD15L MovementL(.clk(clk), 
                         .UD(left_transition), 
-                        .CE(left_transition & (frame | half_frame)),    
+                        .CE(left_transition & (frame | half_frame) & ~gameover & gamestart),    
                         .LD(10'b0), .Din(15'd0), .Q(movementL));      
                               
     // when a btn is pressed, flip flops hold the signal until player reaches target location and then releases signal

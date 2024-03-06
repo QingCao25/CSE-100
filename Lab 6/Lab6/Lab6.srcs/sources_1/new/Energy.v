@@ -22,8 +22,8 @@
 
 module Energy(
     input [14:0] h, v,
-    input clk, btnU, frame,
-    output energy
+    input clk, btnU, frame, gameover, gamestart,
+    output energy, no_energy
     );
     wire [14:0] currentval, topbar; 
 
@@ -34,9 +34,9 @@ module Energy(
     assign topbar = 40 + currentval; // allows the topbar to me shifted downwards based on if current val is >= 0
     countUD15L energycounter(.clk(clk),     
                             .UD(((topbar >= 40) & btnU)), 
-                            .CE(((btnU & topbar < 232) | (~btnU & topbar > 40)) & frame), 
+                            .CE(((btnU & topbar < 232) | (~btnU & topbar > 40)) & frame & ~gameover & gamestart), 
                             .LD(10'b0), .Din(15'd0), .Q(currentval));
 
-
+    FDRE #(.INIT(1'b0)) no_energy_Detect(.C(clk), .CE(topbar == 231), .R(topbar < 231), .D(1'b1), .Q(no_energy));
     
 endmodule

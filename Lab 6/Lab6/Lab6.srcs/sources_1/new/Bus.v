@@ -22,11 +22,10 @@
 
 module Bus(
     input [14:0] h, v, shift, v_offset, 
-    input frame,
-    input clk,
-    output bus,
-    output [14:0] currentV
-    
+    input frame, gameover, gamestart,
+    input clk, bus,
+    output [14:0] currentV,
+    output [14:0] score 
     );
     
     assign bus = ((h > (208 + shift)) & (h < (268 + shift))) & ((v > bustop) & (v < busbot));
@@ -39,12 +38,12 @@ module Bus(
     
     countUD15L Movement_bot(.clk(clk), 
                     .UD(1'b1),                       
-                    .CE(1'b1 & frame & (v_offset >= bot_lengthcounter)),    
+                    .CE(1'b1 & frame & ~gameover & gamestart & (busbot >= v_offset)),    
                     .LD(bustop == 479), .Din(15'd0), .Q(bot_lengthcounter)); 
                     
     countUD15L Movement_top(.clk(clk), 
                     .UD(1'b1),                       
-                    .CE(1'b1 & frame & (bot_lengthcounter >= bus_length)),    
+                    .CE(1'b1 & frame & (bot_lengthcounter >= bus_length) & ~gameover & gamestart),    
                     .LD(bustop == 479), .Din(15'd0), .Q(top_lengthcounter));       
                     
     assign bus_length = 60 + rnd_out[5:0];
@@ -58,5 +57,14 @@ module Bus(
     FDRE #(.INIT(1'b0)) ff_04 (.C(clk), .CE(bustop == 479), .D(rnd[3]), .Q(rnd_out[3]));
     FDRE #(.INIT(1'b0)) ff_05 (.C(clk), .CE(bustop == 479), .D(rnd[4]), .Q(rnd_out[4]));
     FDRE #(.INIT(1'b0)) ff_06 (.C(clk), .CE(bustop == 479), .D(rnd[5]), .Q(rnd_out[5]));
+    
+    
+    
+    
+    // Scoring Mechanism
+    countUD15L Scoring(.clk(clk), 
+                .UD(1'b1),                       
+                .CE(bustop == 312),       
+                .LD(10'd0), .Din(15'd0), .Q(score));  
 
 endmodule

@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Mar  5 20:08:31 2024
-| Host         : SurfaceQ running 64-bit major release  (build 9200)
+| Date         : Wed Mar  6 13:55:41 2024
+| Host         : QPC running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Module_control_sets_placed.rpt
 | Design       : Top_Module
 | Device       : xc7a35t
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    38 |
-|    Minimum number of control sets                        |    38 |
+| Total control sets                                       |    74 |
+|    Minimum number of control sets                        |    74 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   119 |
+| Unused register locations in slices containing registers |   263 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,10 +39,10 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    38 |
-| >= 0 to < 4        |     2 |
-| >= 4 to < 6        |    32 |
-| >= 6 to < 8        |     3 |
+| Total control sets |    74 |
+| >= 0 to < 4        |     9 |
+| >= 4 to < 6        |    59 |
+| >= 6 to < 8        |     5 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
@@ -58,59 +58,95 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              29 |            7 |
+| No           | No                    | No                     |              49 |           15 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             178 |           80 |
+| Yes          | No                    | No                     |             317 |          132 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               2 |            2 |
+| Yes          | Yes                   | No                     |              11 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------+-----------------------------------+---------------------+------------------+----------------+
-|       Clock Signal       |           Enable Signal           |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
-+--------------------------+-----------------------------------+---------------------+------------------+----------------+
-|  not_so_slow/slowclk/clk | SLUGS/CE0                         | SLUGS/ff_00_i_1_n_0 |                1 |              1 |
-|  not_so_slow/slowclk/clk | SLUGS/ff_01_i_2__24_n_0           | SLUGS/R0            |                1 |              1 |
-|  not_so_slow/slowclk/clk | SLUGS/MovementR/c1/CE03_out       |                     |                1 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Left/Movement_top/c2/CE0      |                     |                4 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Left/Movement_top/c2/CE0_0    |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Left/Movement_top/c2/CE0_1    |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Left/Movement_top/c2/CE0_3    |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Left/Movement_top/c2/CE0_2    |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Mid/Movement_bot/c1/CE0_1     |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Mid/Movement_top/c1/CE0       |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Mid/Movement_top/c2/CE0       |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Mid/Movement_top/c2/CE0_1     |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Mid/Movement_top/c2/CE0_2     |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Mid/Movement_top/c2/CE0_0     |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Left/Movement_bot/c1/CE0_1    |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | engry/energycounter/c2/CE03_out   |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | engry/energycounter/c1/CE0_0      |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | SLUGS/MovementL/c1/CE0            |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | SLUGS/MovementL/c2/CE03_out       |                     |                1 |              5 |
-|  not_so_slow/slowclk/clk | sync/hcounter/c1/CE0              |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | SLUGS/MovementR/c1/CE0            |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Right/Movement_bot/c1/CE0_1   |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Right/Movement_top/c2/CE0_1   |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Right/Movement_top/c2/CE0     |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Right/Movement_top/c1/CE0     |                     |                1 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Right/Movement_top/c2/CE0_0   |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Right/Movement_top/c2/CE0_2   |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | sync/hcounter/c2/CE0_1            |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | sync/hcounter/c2/CE0_0            |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | sync/hcounter/c2/ff_01_10         |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | sync/hcounter/c2/CE0              |                     |                3 |              5 |
-|  not_so_slow/slowclk/clk | sync/hcounter/c2/CE00_out[0]      |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | sync/vcounter/c1/CE0_0            |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | sync/vcounter/c2/CE0              |                     |                2 |              5 |
-|  not_so_slow/slowclk/clk | BUS_Right/Movement_top/c2/ff_02_1 |                     |                3 |              6 |
-|  not_so_slow/slowclk/clk | BUS_Mid/Movement_top/c2/ff_02_1   |                     |                1 |              6 |
-|  not_so_slow/slowclk/clk | BUS_Left/Movement_top/c2/ff_05_1  |                     |                3 |              6 |
-|  not_so_slow/slowclk/clk |                                   |                     |                7 |             29 |
-+--------------------------+-----------------------------------+---------------------+------------------+----------------+
++------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+|         Clock Signal         |                Enable Signal               |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
+|  not_so_slow/slowclk/clk_out | BUS_Right/Movement_bot/c1/ff_04_1          |                                             |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | Delayed_Start/c1/ff_02_0                   |                                             |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | Delayed_Start/c1/p_0_out                   |                                             |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | BUS_Left/Movement_bot/c1/ff_04_0           |                                             |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | SLUGS/ff_01_i_2__18_n_0                    | SLUGS/R0                                    |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c3/crash                     |                                             |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | btnC_IBUF                                  |                                             |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | SLUGS/CE0                                  | SLUGS/ff_00_i_1_n_0                         |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | engry/energycounter/c1/CE0                 | engry/energycounter/c1/R0                   |                1 |              1 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_38/I_36_31_n_0    |                                             |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_39/CEO            |                                             |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | color/Flash_purple/c1/ff_04_0              | color/Flash_purple/c1/purplecounter0_out[0] |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | color/Flash_yellow/c2/framecounter0_out[0] | color/Flash_yellow/c2/framecounter0_out[1]  |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_40/CEO            |                                             |                2 |              4 |
+|  not_so_slow/slowclk/clk_out | not_so_slow/slowclk/XLXI_45/CEO            |                                             |                1 |              4 |
+|  not_so_slow/slowclk/clk_out | BUS_Left_2/Movement_bot/c1/CE0             |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left_2/Movement_bot/c1/CE0_0           |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/gamestart_state           |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left_2/Movement_bot/c3/CE0_0           |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left_2/Movement_bot/c3/CE0_1           |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left_2/Movement_top/c1/CE0_1           |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left/Movement_bot/c1/CE0_0             |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left/Movement_bot/c2/CE0               |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left/Movement_bot/c3/CE0_1             |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left_2/Movement_top/c2/CE0_0           |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right/Movement_bot/c1/CE0_0            |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right/Movement_bot/c2/CE0              |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right/Movement_bot/c3/CE0_1            |                                             |                4 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right/Movement_top/c1/CE0_1            |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Mid/Movement_bot/c1/CE0_0              |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Mid/Movement_bot/c1/CE0_1              |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Mid/Movement_bot/c3/CE0_1              |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Mid/Movement_top/c1/CE0_1              |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Mid/Movement_top/c2/CE0                |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right/Movement_top/c2/CE0              |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/hcounter/c2/CE0                       |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | engry/energycounter/c1/ff_01_i_1__12_n_0   |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | color/Flash_purple/c1/CE0_0                |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | SLUGS/MovementL/c1/CE03_out                |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | SLUGS/MovementL/c1/CE0                     |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | SLUGS/MovementR/c1/CE0                     |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | SLUGS/MovementR/c1/ff_01_i_1__18_n_0       |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | SLUGS/MovementR/c2/CE03_out                |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/hcounter/c1/CE0                       |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right_2/Movement_bot/c1/CE0            |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right_2/Movement_bot/c1/CE0_0          |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right_2/Movement_bot/c3/CE0_0          |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right_2/Movement_bot/c3/CE0_1          |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right_2/Movement_top/c1/CE0_1          |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right_2/Movement_top/c2/CE0_0          |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | color/Flash_purple/c1/CE0                  |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left/Movement_top/c2/CE0               |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | color/Flash_purple/c2/CE0                  |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | Delayed_Start/c1/CE0                       |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | engry/energycounter/c1/CE03_out            |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | engry/energycounter/c1/CE0_0               |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | color/Flash_yellow/c1/CE0_0                |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | color/Flash_yellow/c2/CE0                  |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | Delayed_Start/c2/CE0                       |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/CE0_0                     |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/CE0_2                     |                                             |                1 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/CE0_3                     |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/CE0_4                     |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/CE0_1                     |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/CE0_5                     |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Left/Movement_top/c1/CE0_1             |                                             |                2 |              5 |
+|  not_so_slow/slowclk/clk_out | SLUGS/MovementL/c1/CE00_out[0]             |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | sync/vcounter/c1/CE0                       |                                             |                3 |              5 |
+|  not_so_slow/slowclk/clk_out | BUS_Right_2/Movement_top/c1/ff_03_1        |                                             |                2 |              6 |
+|  not_so_slow/slowclk/clk_out | BUS_Mid/Movement_top/c1/ff_03_1            |                                             |                2 |              6 |
+|  not_so_slow/slowclk/clk_out | BUS_Left_2/Movement_top/c1/ff_03_1         |                                             |                2 |              6 |
+|  not_so_slow/slowclk/clk_out | BUS_Right/Movement_top/c1/ff_03_1          |                                             |                2 |              6 |
+|  not_so_slow/slowclk/clk_out | BUS_Left/Movement_top/c1/ff_03_1           |                                             |                1 |              6 |
+|  not_so_slow/slowclk/clk_out |                                            |                                             |               15 |             49 |
++------------------------------+--------------------------------------------+---------------------------------------------+------------------+----------------+
 
 
