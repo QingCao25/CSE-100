@@ -54,9 +54,14 @@ module Top_Module(
     Slug SLUGS(.h(h), .v(v), .clk(clk), .btnR(btnR), .btnL(btnL), .slug(player), .frame(frame), .half_frame(half_frame));
     
     
-    Bus BUS_Left(.h(h), .v(v), .bus(busR), .shift(15'd0)); // Generates the far left bus with a shift of 0 to the right
-    Bus BUS_Mid(.h(h), .v(v), .bus(busM), .shift(15'd70)); // Generates the mid bus with a shift of XX to the right
-    Bus BUS_Right(.h(h), .v(v), .bus(busL), .shift(15'd140)); // Generates the left bus with a shift of XX to the right 
+    Bus BUS_Left(.h(h), .v(v), .clk(clk), .bus(busR), .frame(frame), .shift(15'd0)); // Generates the far left bus with a shift of 0 to the right
+    Bus BUS_Mid(.h(h), .v(v), .clk(clk), .bus(busM), .frame(frame), .shift(15'd70)); // Generates the mid bus with a shift of XX to the right
+    Bus BUS_Right(.h(h), .v(v), .clk(clk), .bus(busL), .frame(frame), .shift(15'd140)); // Generates the left bus with a shift of XX to the right 
+
+
+//    Bus BUS_Left_2(.h(h), .v(v), .clk(clk), .bus(busR), .frame(frame), .shift(15'd0)); // Generates the far left bus with a shift of 0 to the right
+//    Bus BUS_Mid_2(.h(h), .v(v), .clk(clk), .bus(busM), .frame(frame), .shift(15'd70)); // Generates the mid bus with a shift of XX to the right
+//    Bus BUS_Right_2(.h(h), .v(v), .clk(clk), .bus(busL), .frame(frame), .shift(15'd140)); // Generates the left bus with a shift of XX to the right 
 
     
 //    RingCounter ringcounter(.clk(clk), .Advance(digsel), .Q(ringcount));

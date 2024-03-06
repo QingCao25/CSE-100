@@ -1,7 +1,11 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../Lab6.srcs/sources_1/new/Bus.v" \
 "../../../../Lab6.srcs/sources_1/new/Color.v" \
+"../../../../Lab6.srcs/sources_1/new/Energy.v" \
 "../../../../Lab6.srcs/sources_1/new/Frame.v" \
+"../../../../Lab6.srcs/sources_1/new/LFSR.v" \
+"../../../../Lab6.srcs/sources_1/new/Slug.v" \
 "../../../../Lab6.srcs/sources_1/new/Syncs.v" \
 "../../../../Lab6.srcs/sources_1/new/Top_Module.v" \
 "../../../../Lab6.srcs/sources_1/imports/new/countUD15L.v" \
