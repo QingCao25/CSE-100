@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Mar  6 15:06:34 2024
-# Process ID: 3340
-# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1
+# Start of session at: Thu Mar  7 00:14:35 2024
+# Process ID: 11280
+# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1
 # Command line: vivado.exe -log Top_Module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Top_Module.tcl -notrace
-# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.vdi
-# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1\vivado.jou
+# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.vdi
+# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source Top_Module.tcl -notrace

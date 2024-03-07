@@ -22,8 +22,8 @@
 
 module Slug(
     input [14:0] h, v, frame, half_frame,
-    input btnR, btnL, clk, gameover, gamestart,
-    output slug
+    input btnR, btnL, clk, gameover, gamestart, immortal,
+    output slug, in_mid_check
     );
     wire [14:0] movementR, currenttrack, movementL;
     wire left_transition, left_track, right_transition, right_track;
@@ -38,7 +38,9 @@ module Slug(
     // Goes 1 if the slug is within these bounds -> if the slug is in the left, mid, or right track
     assign in_left = (currenttrack == 230);
     assign in_mid = (currenttrack == 300);
-    assign in_right = (currenttrack == 370);    
+    assign in_right = (currenttrack == 370);  
+    
+    assign in_mid_check = in_mid;  
 
     // counters to move player left and right
     countUD15L MovementR(.clk(clk), 
@@ -52,7 +54,7 @@ module Slug(
                         .LD(10'b0), .Din(15'd0), .Q(movementL));      
                               
     // when a btn is pressed, flip flops hold the signal until player reaches target location and then releases signal
-    FDRE #(.INIT(1'b0)) ff_00 (.C(clk), .CE(btnL & ~right_transition), .R(in_left | (in_mid & left_transition)), .D(1'b1), .Q(left_transition));
-    FDRE #(.INIT(1'b0)) ff_01 (.C(clk), .CE(btnR & ~left_transition), .R(in_right | (in_mid & right_transition)), .D(1'b1), .Q(right_transition));
+    FDRE #(.INIT(1'b0)) ff_00 (.C(clk), .CE(btnL & ~right_transition & ~immortal), .R(in_left | (in_mid & left_transition)), .D(1'b1), .Q(left_transition));
+    FDRE #(.INIT(1'b0)) ff_01 (.C(clk), .CE(btnR & ~left_transition & ~immortal), .R(in_right | (in_mid & right_transition)), .D(1'b1), .Q(right_transition));
 
 endmodule
