@@ -40,7 +40,6 @@ module Top_Module(
     wire [3:0] anOut, H;
     wire Bus_Right_Begin, Bus_Mid_Begin;
     
-    assign seg[6:0] = 0;
     assign dp = 1;
     assign crash = player & (busM | busR | busL) & ~immortal & ~sw[3];
     assign immortal = btnU & ~no_energy; 
@@ -95,9 +94,9 @@ module Top_Module(
     
 
 
-    assign totalscore = 15'b0;
+    assign totalscore = scoreL + scoreM + scoreR;
     RingCounter ringcounter(.clk(clk), .Advance(digsel), .Q(anOut));
-    selector select(.N({1'b0, totalscore[7:0]}), .sel(anOut), .H(H[3:0]));
+    selector select(.N({8'b0, totalscore[7:0]}), .sel(anOut), .H(H[3:0]));
     hex7seg hex(.n(H[3:0]), .seg(seg[6:0]));
     
     

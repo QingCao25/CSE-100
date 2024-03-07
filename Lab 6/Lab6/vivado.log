@@ -2,28 +2,29 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Mar  6 01:51:01 2024
-# Process ID: 18984
-# Current directory: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23744 C:\Users\qinyu\Desktop\CSE 100\CSE-100\Lab 6\Lab6\Lab6.xpr
-# Log file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/vivado.log
-# Journal file: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6\vivado.jou
+# Start of session at: Wed Mar  6 14:41:04 2024
+# Process ID: 15996
+# Current directory: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15868 C:\Users\qinyu\OneDrive\Desktop\CSE100\CSE-100\Lab 6\Lab6\Lab6.xpr
+# Log file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/vivado.log
+# Journal file: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6' since last save.
+open_project {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 912.629 ; gain = 57.016
 update_compile_order -fileset sources_1
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 01:57:55 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 01:57:55 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar  6 14:44:50 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
+[Wed Mar  6 14:44:50 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
 open_hw
 connect_hw_server
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -36,101 +37,104 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A899DAA
+set_property PROGRAM.FILE {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:01:56 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:01:56 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:02:57 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:02:57 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar  6 14:53:51 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
+[Wed Mar  6 14:53:52 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:06:03 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:06:03 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
 launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-54] Inspecting design source files for 'testSyncs' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj testSyncs_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Bus
-WARNING: [VRFC 10-3380] identifier 'bustop' is used before its declaration [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:32]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Color.v" into library xil_defaultlib
+WARNING: [VRFC 10-3380] identifier 'bustop' is used before its declaration [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:31]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Color.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Color
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Energy
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Frame.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Frame.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Frame
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/LFSR.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/LFSR.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module LFSR
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/sources_1/new/RingCounter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RingCounter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Slug
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Syncs.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Syncs.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Syncs
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module Top_Module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD15L.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD15L.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module countUD15L
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD5L.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD5L.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module countUD5L
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/sources_1/imports/new/labVGA_clks.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/sources_1/imports/new/hex7seg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex7seg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/sources_1/imports/new/labVGA_clks.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module labVGA_clks
 INFO: [VRFC 10-311] analyzing module clk_wiz_0
 INFO: [VRFC 10-311] analyzing module clkcntrl4
 INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
 INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sim_1/imports/Lab6.sim/test3.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/sources_1/new/selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module selector
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sim_1/imports/Lab6.sim/test3.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module testSyncs
 INFO: [VRFC 10-311] analyzing module check_the_sync_signals
 INFO: [VRFC 10-311] analyzing module check_the_rgb_signals
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
 INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
 "xelab -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
 Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v:38]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 15 for port 'frame' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v:54]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:46]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:47]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:51]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:52]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'run' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:53]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v:38]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 15 for port 'frame' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v:63]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:46]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:47]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:51]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:52]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'run' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:52]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:68]
+WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v:89]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -160,22 +164,26 @@ Compiling module unisims_ver.BUF
 Compiling module xil_defaultlib.clkcntrl4
 Compiling module unisims_ver.STARTUPE2
 Compiling module xil_defaultlib.labVGA_clks
+Compiling module unisims_ver.FDRE(INIT=1'b1)
 Compiling module xil_defaultlib.Color
 Compiling module xil_defaultlib.Frame
 Compiling module xil_defaultlib.Energy
 Compiling module xil_defaultlib.Slug
-Compiling module unisims_ver.FDRE(INIT=1'b1)
 Compiling module xil_defaultlib.LFSR_default
 Compiling module xil_defaultlib.Bus
+Compiling module xil_defaultlib.RingCounter
+Compiling module xil_defaultlib.selector
+Compiling module xil_defaultlib.hex7seg
 Compiling module xil_defaultlib.Top_Module
 Compiling module xil_defaultlib.check_the_sync_signals
 Compiling module xil_defaultlib.check_the_rgb_signals
 Compiling module xil_defaultlib.testSyncs
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot testSyncs_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1991.062 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "testSyncs_behav -key {Behavioral:sim_1:Functional:testSyncs} -tclbatch {testSyncs.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -192,1351 +200,29 @@ source testSyncs.tcl
 #   }
 # }
 # run 1000ns
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2013.051 ; gain = 6.852
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'testSyncs_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 1986.234 ; gain = 7.086
-current_wave_config {Untitled 1}
-Untitled 1
-add_wave {{/testSyncs/UUT/BUS_Left}} 
-run 200 us
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'testSyncs' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj testSyncs_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xelab -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v:38]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 15 for port 'frame' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v:54]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:46]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:47]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:51]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:52]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'run' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:53]
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2029.938 ; gain = 0.000
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 2013.051 ; gain = 21.988
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Mar  6 15:05:38 2024] Launched synth_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
+[Wed Mar  6 15:05:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/qinyu/OneDrive/Desktop/CSE100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:17:40 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:17:40 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:21:55 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:21:55 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:23:52 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:23:52 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:28:15 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:28:15 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-update_compile_order -fileset sources_1
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-update_compile_order -fileset sources_1
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:37:09 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:37:09 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:49:06 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:49:06 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 02:54:04 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 02:54:04 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:01:23 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:01:23 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-update_compile_order -fileset sources_1
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:04:42 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:04:42 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:05:19 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:05:19 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:13:07 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:13:07 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:23:20 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:23:20 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:25:50 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:25:50 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:34:56 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:34:56 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:38:23 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:38:23 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:40:19 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:40:19 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:43:21 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:43:21 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:45:29 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:45:29 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:50:41 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:50:41 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1
-
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 03:53:52 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 03:53:52 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-relaunch_sim
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'testSyncs' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj testSyncs_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Bus
-WARNING: [VRFC 10-3380] identifier 'bustop' is used before its declaration [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:32]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Color.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Color
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Energy
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Frame.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Frame
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/LFSR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LFSR
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Slug
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Syncs.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Syncs
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_Module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD15L.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module countUD15L
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD5L.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module countUD5L
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/sources_1/imports/new/labVGA_clks.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module labVGA_clks
-INFO: [VRFC 10-311] analyzing module clk_wiz_0
-INFO: [VRFC 10-311] analyzing module clkcntrl4
-INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
-INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sim_1/imports/Lab6.sim/test3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testSyncs
-INFO: [VRFC 10-311] analyzing module check_the_sync_signals
-INFO: [VRFC 10-311] analyzing module check_the_rgb_signals
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xelab -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v:38]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 15 for port 'frame' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v:59]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:46]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:47]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:51]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:52]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'run' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:53]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module unisims_ver.FDRE_default
-Compiling module xil_defaultlib.countUD5L
-Compiling module xil_defaultlib.countUD15L
-Compiling module xil_defaultlib.Syncs
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.clk_wiz_0
-Compiling module unisims_ver.x_lut2_mux4
-Compiling module unisims_ver.LUT2
-Compiling module unisims_ver.XOR2
-Compiling module unisims_ver.FDCE_default
-Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
-Compiling module unisims_ver.LUT4
-Compiling module unisims_ver.AND4
-Compiling module unisims_ver.x_lut3_mux8
-Compiling module unisims_ver.LUT3
-Compiling module unisims_ver.AND3
-Compiling module unisims_ver.AND2
-Compiling module unisims_ver.VCC
-Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
-Compiling module unisims_ver.BUF
-Compiling module xil_defaultlib.clkcntrl4
-Compiling module unisims_ver.STARTUPE2
-Compiling module xil_defaultlib.labVGA_clks
-Compiling module xil_defaultlib.Color
-Compiling module xil_defaultlib.Frame
-Compiling module xil_defaultlib.Energy
-Compiling module xil_defaultlib.Slug
-Compiling module unisims_ver.FDRE(INIT=1'b1)
-Compiling module xil_defaultlib.LFSR_default
-Compiling module xil_defaultlib.Bus
-Compiling module xil_defaultlib.Top_Module
-Compiling module xil_defaultlib.check_the_sync_signals
-Compiling module xil_defaultlib.check_the_rgb_signals
-Compiling module xil_defaultlib.testSyncs
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot testSyncs_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-ERROR: [Labtools 27-1832] create_wave_config not a supported tcl command in labtools hardware mode. Default wave configurations are automatically created when triggering an ILA core.
-relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2492.066 ; gain = 0.000
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A899DAA
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-54] Inspecting design source files for 'testSyncs' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj testSyncs_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Bus
-WARNING: [VRFC 10-3380] identifier 'bustop' is used before its declaration [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:32]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Color.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Color
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Energy
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Frame.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Frame
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/LFSR.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module LFSR
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Slug
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Syncs.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Syncs
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Top_Module
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD15L.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module countUD15L
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/new/countUD5L.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module countUD5L
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/imports/sources_1/imports/new/labVGA_clks.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module labVGA_clks
-INFO: [VRFC 10-311] analyzing module clk_wiz_0
-INFO: [VRFC 10-311] analyzing module clkcntrl4
-INFO: [VRFC 10-311] analyzing module FTCE_MXILINX_clkcntrl4
-INFO: [VRFC 10-311] analyzing module CB4CE_MXILINX_clkcntrl4
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sim_1/imports/Lab6.sim/test3.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testSyncs
-INFO: [VRFC 10-311] analyzing module check_the_sync_signals
-INFO: [VRFC 10-311] analyzing module check_the_rgb_signals
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-"xelab -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator 2019.1
-Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 3beb511f384247a78c34fbc528b2f1f1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testSyncs_behav xil_defaultlib.testSyncs xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Energy.v:38]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 15 for port 'frame' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Top_Module.v:59]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:46]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:47]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'CE' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:51]
-WARNING: [VRFC 10-3091] actual bit length 10 differs from formal bit length 1 for port 'LD' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Slug.v:52]
-WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 'run' [C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.srcs/sources_1/new/Bus.v:53]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module unisims_ver.FDRE_default
-Compiling module xil_defaultlib.countUD5L
-Compiling module xil_defaultlib.countUD15L
-Compiling module xil_defaultlib.Syncs
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.clk_wiz_0
-Compiling module unisims_ver.x_lut2_mux4
-Compiling module unisims_ver.LUT2
-Compiling module unisims_ver.XOR2
-Compiling module unisims_ver.FDCE_default
-Compiling module xil_defaultlib.FTCE_MXILINX_clkcntrl4
-Compiling module unisims_ver.LUT4
-Compiling module unisims_ver.AND4
-Compiling module unisims_ver.x_lut3_mux8
-Compiling module unisims_ver.LUT3
-Compiling module unisims_ver.AND3
-Compiling module unisims_ver.AND2
-Compiling module unisims_ver.VCC
-Compiling module xil_defaultlib.CB4CE_MXILINX_clkcntrl4
-Compiling module unisims_ver.BUF
-Compiling module xil_defaultlib.clkcntrl4
-Compiling module unisims_ver.STARTUPE2
-Compiling module xil_defaultlib.labVGA_clks
-Compiling module xil_defaultlib.Color
-Compiling module xil_defaultlib.Frame
-Compiling module xil_defaultlib.Energy
-Compiling module xil_defaultlib.Slug
-Compiling module unisims_ver.FDRE(INIT=1'b1)
-Compiling module xil_defaultlib.LFSR_default
-Compiling module xil_defaultlib.Bus
-Compiling module xil_defaultlib.Top_Module
-Compiling module xil_defaultlib.check_the_sync_signals
-Compiling module xil_defaultlib.check_the_rgb_signals
-Compiling module xil_defaultlib.testSyncs
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot testSyncs_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "testSyncs_behav -key {Behavioral:sim_1:Functional:testSyncs} -tclbatch {testSyncs.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-source testSyncs.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'testSyncs_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2492.066 ; gain = 0.000
-run 200 us
-run 200 us
-run 200 us
-run 200 us
-run 200 us
-run all
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2492.066 ; gain = 0.000
-run all
-run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2492.066 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:01:18 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:01:18 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:06:15 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:06:15 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:08:36 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:08:36 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:10:51 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:10:51 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:14:31 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:14:31 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:27:03 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:27:03 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:29:18 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:29:18 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:37:10 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:37:10 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:42:25 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:42:25 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:45:55 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:45:55 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 04:50:54 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 04:50:54 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:00:42 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:00:42 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:03:01 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:03:01 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:08:16 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:08:16 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:15:29 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:15:29 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:19:16 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:19:17 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:21:49 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:21:49 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:47:03 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:47:03 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:57:42 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:57:42 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 05:59:59 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 05:59:59 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:02:49 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:02:49 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:03:57 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:03:57 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:06:13 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:06:13 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:09:01 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:09:01 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:13:27 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:13:27 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:16:00 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:16:00 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:18:37 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:18:37 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run impl_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
-
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:19:14 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:19:14 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:20:51 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:20:51 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:23:38 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:23:38 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:25:47 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:25:47 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:35:11 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:35:11 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:37:44 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:37:44 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:42:10 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:42:10 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:46:40 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:46:40 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:50:30 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:50:30 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:53:28 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:53:28 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 06:57:04 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 06:57:04 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-disconnect_hw_server localhost:3121
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
- Targets(s) ", jsn-Basys3-210183B312D5A" may be locked by another hw_server.
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 12:50:16 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-disconnect_hw_server localhost:3121
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
- Targets(s) ", jsn-Basys3-210183B312D5A" may be locked by another hw_server.
-disconnect_hw_server localhost:3121
-connect_hw_server
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-ERROR: [Labtools 27-3165] End of startup status: LOW
-ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:04:18 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:04:18 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:12:02 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:12:02 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-ERROR: [Labtools 27-3165] End of startup status: LOW
-ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:16:01 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:16:01 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:33:24 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:33:24 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:33:49 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:33:49 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:36:11 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:36:11 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:37:10 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:37:10 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:43:11 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:43:11 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:43:50 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:43:50 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:46:20 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:46:20 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:53:20 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:53:20 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Wed Mar  6 13:54:47 2024] Launched synth_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/synth_1/runme.log
-[Wed Mar  6 13:54:47 2024] Launched impl_1...
-Run output will be captured here: C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/runme.log
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/qinyu/Desktop/CSE 100/CSE-100/Lab 6/Lab6/Lab6.runs/impl_1/Top_Module.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183B312D5A
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 2057.578 ; gain = 3.301
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Mar  6 13:58:00 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Mar  6 21:58:27 2024...
